@@ -22,6 +22,7 @@ export default function Home() {
     </>
   );
 }
+
 export const metadata = {
   title: "Blackrock Porcelano: Luxury Ceramic & Porcelano Tile Collections",
   description:
