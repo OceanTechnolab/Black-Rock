@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  metadataBase: new URL(process.env.NEXT_PUBLIC_WEB_URL || 'https://blackrockporcelain.com/'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_WEB_URL || 'https://ocean.blackrockporcelain.com/'),
   // Ensure trailingSlash is set to true for static export
   trailingSlash: true,
-  assetPrefix: process.env.NEXT_PUBLIC_WEB_URL || 'https://blackrockporcelain.com/',
+  assetPrefix: process.env.NEXT_PUBLIC_WEB_URL || 'https://ocean.blackrockporcelain.com/',
   basePath: '',
   // ...existing code...
 };

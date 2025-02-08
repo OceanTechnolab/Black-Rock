@@ -231,4 +231,4 @@ export const products = [
   },
 ];
 
-export const NEXT_PUBLIC_WEB_URL = "https://blackrockporcelain.com/";
+export const NEXT_PUBLIC_WEB_URL = "https://ocean.blackrockporcelain.com/";
