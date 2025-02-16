@@ -3,9 +3,9 @@ import { DownArrowIcon } from "@/utils/icon";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
-import Home1 from "../../../image/Home/s1.jpg";
-import Home4 from "../../../image/Home/s2.jpg";
-import Blog1 from "../../../image/Home/s3.jpg";
+import Home1 from "../../../image/Home/s1.png";
+import Home4 from "../../../image/Home/s2.png";
+import Blog1 from "../../../image/Home/s3.png";
 
 import { motion } from "framer-motion";
 import Link from "next/link";
