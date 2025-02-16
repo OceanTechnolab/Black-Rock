@@ -98,3 +98,25 @@ body {
   transition: transform 0.05s ease-out;
 } */
 
+/* custom scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  box-shadow: 0px 0px 5px gray inset;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4f4d46;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
