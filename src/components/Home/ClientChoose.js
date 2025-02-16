@@ -95,39 +95,39 @@ const ClientChoose = () => {
   const review = [
     {
       id: 1,
-      name: "Emily S.",
+      name: "Rakesh T.",
       review:
         "Blackrock Porcelano's tiles completely transformed my living room. The quality is unmatched, and their customer service was top-notch!",
       image: Home9,
     },
     {
       id: 2,
-      name: "John D.",
+      name: "Rohan K.",
       review:
         "I’m impressed by the durability and elegance of the tiles I purchased. They’ve added a modern touch to my bathroom.",
       image: P1,
     },
     {
       id: 3,
-      name: "Sarah K.",
+      name: "Anjali S.",
       review:
         "Wide variety, excellent quality, and fast delivery – Blackrock Porcelano exceeded all my expectations!",
       image: p2,
     },
     {
       id: 4,
-      name: "Michael B.",
+      name: "Vikram M.",
       review:
         "The tiles were perfect for our outdoor patio. Stunning design and long-lasting quality!",
       image: p3,
     },
     {
       id: 5,
-      name: "Jessica L.",
+      name: "Neha P.",
       review:
         "Customer support was very helpful in choosing the right tiles for my project. Highly recommended!",
       image: p4,
-    },
+    },    
   ];
 
   return (
