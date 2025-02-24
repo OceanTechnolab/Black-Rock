@@ -288,7 +288,6 @@ const Footer = () => {
                 className="hover:underline no-underline text-black-rock-Grey2"
               >
                 <span className="text-black-rock-Grey2 block">
-                  Design By Creatief
                 </span>
                 {/* <DesignerLogoIcon className="md:w-[220px] md:h-[28px] w-[150px] h-[20px]" /> */}
               </Link>
