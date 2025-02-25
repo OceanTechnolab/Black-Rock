@@ -24,7 +24,7 @@ const Product1 = () => {
           </p>
         </Col>
       </Row>
-      <Row>
+      {/* <Row>
         <Col>
           <div className="xl:h-[720px] lg:h-[600px] md:h-[450px] h-[280px] relative xl:!mt-60 md:!mt-20 mt-3 rounded-xl">
             <Image
@@ -36,7 +36,7 @@ const Product1 = () => {
             />
           </div>
         </Col>
-      </Row>
+      </Row> */}
     </Container>
   );
 };

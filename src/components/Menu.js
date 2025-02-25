@@ -32,10 +32,24 @@ const Menu = ({ setIsMenuOpen }) => {
         { id: 7, label: "Bathware", link: "/product" },
       ],
     },
-    { id: 4, label: "Catalogue", link: "/catalogue" },
-    { id: 5, label: "Export", link: "/export" },
-    { id: 6, label: "Blogs", link: "/blog" },
-    { id: 7, label: "Contact", link: "/contact" },
+    {
+      id: 4,
+      label: "All Products",
+      link: "/products",
+      subList: [
+        { id: 1, label: "Wall", link: "/products/ceramicandporcelien/",  },
+        { id: 2, label: "Porcelain (gvt & pgvt)", link: "/products" },
+        { id: 3, label: "Slab( Marble & kitchen Top)", link: "/products" },
+        { id: 4, label: "Quartz", link: "/products" },
+        { id: 5, label: "Wood", link: "/products" },
+        { id: 6, label: "Full Body ( Colour Body )", link: "/products" },
+        { id: 7, label: "Bathware", link: "/products" },
+      ],
+    },
+    { id: 5, label: "Catalogue", link: "/catalogue" },
+    { id: 6, label: "Export", link: "/export" },
+    { id: 7, label: "Blogs", link: "/blog" },
+    { id: 8, label: "Contact", link: "/contact" },
   ];
   const router = useRouter();
   const images = [
