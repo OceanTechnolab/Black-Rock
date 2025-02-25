@@ -7,12 +7,22 @@ module.exports = {
   ],
   theme: {
     extend: {
+      // Old colors
+      // colors: {
+      //   "black-rock-Black": "#121212",
+      //   "black-rock-Grey": "#CCCCCC",
+      //   "black-rock-Grey2": "#888888",
+      //   "black-rock-Orange": "#FA4500",
+      //   "black-rock-White": "#ffffff",
+      //   "black-rock-bg-color": "#F5F5F0",
+      // },
+      // New colors
       colors: {
-        "black-rock-Black": "#121212",
+        "black-rock-Black": "#4f4d46",
         "black-rock-Grey": "#CCCCCC",
         "black-rock-Grey2": "#888888",
-        "black-rock-Orange": "#FA4500",
-        "black-rock-White": "#ffffff",
+        "black-rock-Orange": "#787569",
+        "black-rock-White": "#ede8d0",
         "black-rock-bg-color": "#F5F5F0",
       },
       fontFamily: {

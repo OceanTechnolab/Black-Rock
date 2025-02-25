@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "cross-env NEXT_DEBUG=1 next build",
     "start": "next start",
-    "lint": "next lint",
-    "export": "next export"
+    "lint": "next lint"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
@@ -24,6 +23,7 @@
   },
   "devDependencies": {
     "@types/node": "22.7.4",
+    "cross-env": "^7.0.3",
     "eslint": "^8",
     "eslint-config-next": "14.2.8",
     "postcss": "^8",
