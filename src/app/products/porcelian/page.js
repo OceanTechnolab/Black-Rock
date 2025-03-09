@@ -9,8 +9,7 @@ const Breadcrumb = () => (
     <ol className="breadcrumb">
       <li className="breadcrumb-item"><a href="/" className="text-gray-700">Home</a></li>
       <li className="breadcrumb-item"><a href="/products" className="text-gray-700">Products</a></li>
-      <li className="breadcrumb-item"><a href="/products/ceramicandporcelien" className="text-gray-700">Ceramic and Porcelien</a></li>
-      <li className="breadcrumb-item active" aria-current="page">200 X 300 MM</li>
+      <li className="breadcrumb-item active" aria-current="page">Porcelien</li>
     </ol>
   </nav>
 );
@@ -19,7 +18,8 @@ const page = () => {
   return (
     <>
       <Breadcrumb />
-      <div className="container">200 by 300 MM</div>
+      <div className="container">Porcelien</div>
+      <div className="container"><a href="/products/ceramicandporcelien/200X300MM" className="text-gray-700">200 by 300 MM</a></div>
     </>
   );
 };
