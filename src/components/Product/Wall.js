@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Product1 from "@/components/Product/Product1";
@@ -10,6 +11,8 @@ import BOOK_Small from "../../../image/Product/BOOK MATCH 001_Small.png";
 import BOOK_Big1 from "../../../image/Product/BOOK MATCH 002_Big.png";
 import BOOK_Small1 from "../../../image/Product/BOOK MATCH 002_Small.png";
 import { baseURL } from "../../utils/config";
+import { motion } from "framer-motion";
+
 
 
 
@@ -36,9 +39,17 @@ const page = () => {
             <Row>
               <h2 className="hidden"> Wall Collection of {currentYear} </h2>
               <Col md={12} lg={12} xl={12}>
-                <p className="font-ivarRegular xl:text-[100px] md:text-90 text-60 xl:leading-[110px] md:leading-[95px] leading-[66px] uppercase">
+                {/* <p className="font-ivarRegular xl:text-[100px] md:text-90 text-60 xl:leading-[110px] md:leading-[95px] leading-[66px] uppercase">
                   Wall Collection of {currentYear}
-                </p>
+                </p> */}
+                <motion.div
+                  // ref={textRef}
+                  initial={{ opacity: 1, y: 20 }}
+                  // animate={isVisibleText ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 1, ease: "easeOut" }}
+                  className="font-ivarRegular uppercase xl:text-60 lg:text-[49px] md:text-60 text-[38px] xl:leading-[66px] lg:leading-[60px] md:leading-[66px] leading-[42px] "
+                ><p>Wall Collection of {currentYear}</p>
+                </motion.div>
               </Col>
             </Row>
       </Container>
@@ -55,7 +66,7 @@ const page = () => {
           <div className="h-[390px] relative rounded-xl mb-3">
           <a href="/products/wall-ceramic/" className="">
             <Image
-              src={BOOK_Big}
+              src={`${baseURL}cs2.webp`}
               fill
               className="object-cover rounded-xl drop-shadow-lg"
               alt="Ceramic Body Tiles"
@@ -73,7 +84,7 @@ const page = () => {
             <Col xs={4} md={4} lg={6} xl={7}>
               <div className="xl:h-[150px] md:h-[100px] h-[50px] relative">
                 <Image
-                  src={BOOK_Small}
+                  src={`${baseURL}cs3.webp`}
                   fill
                   className="object-cover rounded-xl drop-shadow-lg"
                   alt="Product Image"
@@ -88,9 +99,9 @@ const page = () => {
           className="xl:mb-40 lg:mb-20 mb-10 container"
         >
           <div className="h-[390px] relative rounded-xl mb-3">
-            <a href="/products/porcelian/" className="">
+            <a href="/products/wall-porcelian/" className="">
               <Image
-                src={BOOK_Big1}
+                src={`${baseURL}cs2.webp`}
                 fill
                 className="object-cover rounded-xl drop-shadow-lg"
                 alt="Porcelain Body Tiles"
@@ -109,7 +120,7 @@ const page = () => {
             <Col xs={4} md={4} lg={6} xl={7}>
               <div className="xl:h-[150px] md:h-[100px] h-[50px] relative">
                 <Image
-                  src={BOOK_Small1}
+                  src={`${baseURL}cs3.webp`}
                   fill
                   className="object-cover rounded-xl drop-shadow-lg"
                   alt="Product Image"

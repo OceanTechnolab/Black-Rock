@@ -16,12 +16,10 @@ const Catalogue2 = () => {
           <Row>
             <Col xs={12}>
               <h2 className="mt-16 text-60 leading-[66px] font-ivarRegular uppercase md:mb-6">
-                200 X 300 MM
+                250 X 375 MM
               </h2>
             </Col>
           </Row>
-
-
           <Row className="">
             <Col
               lg={6}
@@ -39,9 +37,12 @@ const Catalogue2 = () => {
               <Row>
                 <Col xs={4} md={4} lg={4} xl={4} className="">
                   <p className="md:text-[26px] md:leading-[31px] text-lg leading-[22px] font-ivarRegular uppercase">
-                    Elevation
+                    Title
                   </p>
-                  <a href={`${baseURL}elevation-200x300mm-digital-blackrock.pdf`} className="" target="_blank">
+                  {/* href={`${baseURL}NAME.pdf`} */}
+                  <a href='#' className="" 
+                    // target="_blank" //Enable this for opening in new tab
+                    >
                     <div className="circle-animation  w-[90px] h-[90px] rounded-full border-2 border-black-rock-Grey relative cursor-pointer" role="button" // For accessibility 
                     >
                       <div className="absolute inset-0 flex justify-center items-center">
@@ -86,11 +87,12 @@ const Catalogue2 = () => {
               <Row>
                 <Col xs={4} md={4} lg={4} xl={4}>
                   <p className="md:text-[26px] md:leading-[31px] text-lg leading-[22px] font-ivarRegular uppercase">
-                  Ordinary
+                  Title
                   </p>
-                  <a href="#" className="" 
-                  // target="_blank"
-                  >
+                  {/* href={`${baseURL}NAME.pdf`} */}
+                  <a href='#' className="" 
+                    // target="_blank" //Enable this for opening in new tab
+                    >
                     <div className="circle-animation  w-[90px] h-[90px] rounded-full border-2 border-black-rock-Grey relative cursor-pointer" role="button" // For accessibility 
                     >
                       <div className="absolute inset-0 flex justify-center items-center">
@@ -121,9 +123,6 @@ const Catalogue2 = () => {
             </Col>
           </Row>
       </Container>
-
-      
-
     </>
   );
 };

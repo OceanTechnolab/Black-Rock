@@ -38,7 +38,7 @@ const page = () => {
           
             <ul className="p-0 font-ivarRegular text-center pt-2">
               <li><a href="/products/wall-ceramic/200X300MM" className="text-black-rock-Black no-underline hover:underline">200 X 300 MM</a></li>
-              <li><a href="/products/ceramic/" className="text-black-rock-Black no-underline hover:underline">200 X 600 MM</a></li>
+              <li><a href="/products/wall-ceramic/200X600MM" className="text-black-rock-Black no-underline hover:underline">200 X 600 MM</a></li>
             </ul>
         </Col>
 
@@ -53,8 +53,8 @@ const page = () => {
           </p> */}
           
             <ul className="p-0 font-ivarRegular text-center">
-              <li><a href="/products/ceramic/" className="text-black-rock-Black no-underline hover:underline">250 X 375 MM</a></li>
-              <li><a href="/products/ceramic/" className="text-black-rock-Black no-underline hover:underline">250 X 400 MM</a></li>
+              <li><a href="/products/wall-ceramic/250X375MM" className="text-black-rock-Black no-underline hover:underline">250 X 375 MM</a></li>
+              <li><a href="/products/wall-ceramic/250X400MM" className="text-black-rock-Black no-underline hover:underline">250 X 400 MM</a></li>
             </ul>
         </Col>
 
@@ -69,10 +69,10 @@ const page = () => {
           </p> */}
           
             <ul className="p-0 font-ivarRegular text-center">
-              <li><a href="/products/ceramic/" className="text-black-rock-Black no-underline hover:underline">300 X 300 MM</a></li>
-              <li><a href="/products/ceramic/" className="text-black-rock-Black no-underline hover:underline">300 X 450 MM</a></li>
-              <li><a href="/products/ceramic/" className="text-black-rock-Black no-underline hover:underline">300 X 600 MM</a></li>
-              <li><a href="/products/ceramic/" className="text-black-rock-Black no-underline hover:underline">300 X 750 MM</a></li>
+              <li><a href="/products/wall-ceramic/300X300MM" className="text-black-rock-Black no-underline hover:underline">300 X 300 MM</a></li>
+              <li><a href="/products/wall-ceramic/300X450MM" className="text-black-rock-Black no-underline hover:underline">300 X 450 MM</a></li>
+              <li><a href="/products/wall-ceramic/300X600MM" className="text-black-rock-Black no-underline hover:underline">300 X 600 MM</a></li>
+              <li><a href="/products/wall-ceramic/300X750MM" className="text-black-rock-Black no-underline hover:underline">300 X 750 MM</a></li>
             </ul>
         </Col>
       </Row>
