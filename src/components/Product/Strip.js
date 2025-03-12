@@ -37,7 +37,7 @@ const page = () => {
     <>
       <Container className="">
             <Row>
-              <h2 className="hidden"> Wall Collection of {currentYear} </h2>
+              <h2 className="hidden"> Strip (Plancs) Collection of {currentYear} </h2>
               <Col md={12} lg={12} xl={12}>
                 {/* <p className="font-ivarRegular xl:text-[100px] md:text-90 text-60 xl:leading-[110px] md:leading-[95px] leading-[66px] uppercase">
                   Wall Collection of {currentYear}
@@ -48,7 +48,7 @@ const page = () => {
                   // animate={isVisibleText ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 1, ease: "easeOut" }}
                   className="font-ivarRegular uppercase xl:text-60 lg:text-[49px] md:text-60 text-[38px] xl:leading-[66px] lg:leading-[60px] md:leading-[66px] leading-[42px] "
-                ><p>Wall Collection of {currentYear}</p>
+                ><p>Strip (Plancs)  Collection of {currentYear}</p>
                 </motion.div>
               </Col>
             </Row>
@@ -64,7 +64,7 @@ const page = () => {
           className=" mb-10 container"
         >
           <div className="h-[390px] relative rounded-xl mb-3">
-          <a href="/products/wall-ceramic/" className="">
+          <a href="/products/strip-200x1000mm/" className="">
             <Image
               src={`${baseURL}cs2.webp`}
               fill
@@ -76,7 +76,7 @@ const page = () => {
           <Row>
             <Col xs={8} md={8} lg={6} xl={5}>
               <p className="md:text-[26px] md:leading-[31px] text-lg leading-[22px] font-ivarRegular uppercase">
-              Ceramic Body Tiles
+              200 X 1000 MM
               </p>
               {/* <p className="text-2xl font-ivarRegular uppercase">600 X 1200 MM</p>
               <p className="text-xl font-gt-reguler uppercase">Glossy</p> */}
@@ -96,10 +96,10 @@ const page = () => {
         </Col>
         <Col
           lg={6}
-          className="mb-10 container"
+          className=" mb-10 container"
         >
           <div className="h-[390px] relative rounded-xl mb-3">
-            <a href="/products/wall-porcelian/" className="">
+            <a href="/products/strip-200x1200mm/" className="">
               <Image
                 src={`${baseURL}cs2.webp`}
                 fill
@@ -112,7 +112,7 @@ const page = () => {
           <Row>
             <Col xs={8} md={8} lg={6} xl={5}>
               <p className="md:text-[26px] md:leading-[31px] text-lg leading-[22px] font-ivarRegular uppercase">
-              Porcelain Body Tiles
+              200 X 1200 MM
               </p>
               {/* <p className="text-2xl font-ivarRegular uppercase">600 X 1200 MM</p>
               <p className="text-xl font-gt-reguler uppercase">Glossy</p> */}

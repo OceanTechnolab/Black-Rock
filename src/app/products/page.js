@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Product1 from "@/components/Product/Product1";
 import Wall from "@/components/Product/Wall";
+import Strip from "@/components/Product/Strip";
 import PageJSON_LD from "@/components/Schema/PageJSON_LD";
 import { Col, Container, Row } from "react-bootstrap";
 import { NEXT_PUBLIC_WEB_URL } from "@/utils/constant";
@@ -36,6 +37,8 @@ const page = () => {
       <Product1 />
       <hr/>
       <Wall />
+      <hr/>
+      <Strip />
       {/* <Container className="">
             <Row>
               <h2 className="hidden"> Collection of {currentYear} </h2>
