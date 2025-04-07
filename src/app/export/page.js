@@ -9,16 +9,17 @@ import PageJSON_LD from "@/components/Schema/PageJSON_LD";
 const page = () => {
   return (
     <>
-     <PageJSON_LD name={"Export"} pathName={"export"}/>
+      <PageJSON_LD name={"Export"} pathName={"export"} />
       <Export1 />
       <Export2 />
-      <ExportPallet/>
+      <ExportPallet />
       <AboutSec5 />
     </>
   );
 };
 
 export default page;
+
 export const metadata = {
   title: "Export Quality Tiles from Blackrock Porcelano",
   description: `Discover Blackrock Porcelano's premium export quality tiles. Our exquisite range of ceramic and Porcelano tiles is designed for international markets, ensuring superior craftsmanship and style for every project.`,

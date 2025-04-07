@@ -27,6 +27,8 @@ import Lucia from "../../../image/Catalogue/Lucia.png"
 import Matt from "../../../image/Catalogue/Matt.png"
 import Rosata from "../../../image/Catalogue/Rosata.png"
 import Fab from "../../../image/Catalogue/Fab.png"
+import { baseURL } from "../../utils/config";
+
 // Reusable Circular Button Component
 const CircularButton = ({ Icon, label, onClick }) => (
   <div
@@ -76,7 +78,7 @@ const catalogueData = [
     title: "600x1200mm",
     images: [
       {
-        imageSrc: SuperHighGlossy, // Replace with actual image source
+        imageSrc: `${baseURL}superhighglossy-scaled.webp`,
         altText: "Catalogue Image 1",
         links: [
           {
@@ -99,7 +101,7 @@ const catalogueData = [
         ],
       },
       {
-        imageSrc: SuperHighGlossy, 
+        imageSrc: `${baseURL}superhighglossy-scaled.webp`, 
         altText: "Catalogue Image 2",
         links: [
           {

@@ -1,10 +1,9 @@
 import { NEXT_PUBLIC_CDN } from "@/utils/constant";
 import React from "react";
 
-const SingleBlogPageJSON_LD = ({ slug }) => {
+const SingleBlogPageJSON_LD = ({ slug, title }) => {
   return (
     <>
-  
       <script
         type="application/ld+json"
         id="application/ld+jsonBlogSBread"
@@ -23,19 +22,18 @@ const SingleBlogPageJSON_LD = ({ slug }) => {
                 "@type": "ListItem",
                 position: 2,
                 name: "blog",
-                item: "https://www.blackrockporcelano.com//blog",
+                item: "https://www.blackrockporcelano.com/blog",
               },
               {
                 "@type": "ListItem",
                 position: 3,
                 name: title,
-                item: `https://www.blackrockporcelano.com//blog/${slug}`,
+                item: `https://www.blackrockporcelano.com/blog/${slug}`,
               },
             ],
           }),
         }}
       />
-    
     </>
   );
 };

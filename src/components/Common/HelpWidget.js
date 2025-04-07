@@ -88,10 +88,16 @@ const HelpWidget = () => {
   return (
     <div className="fixed bottom-5 right-5 z-50">
       {/* Toggle Button */}
-      <button
+      {/* <button
         className={`${
           isOpen ? "bg-red-600" : "bg-red-500"
         } text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-red-700 transition-all relative z-20`}
+        onClick={toggleWidget}
+      > */}
+      <button
+        className={`${
+          isOpen ? "bg-[#4f4d46]" : "bg-[#4f4d46]"
+        } text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-[#3f3d36] transition-all relative z-20`}
         onClick={toggleWidget}
       >
         {isOpen ? <CloseIcon className="stroke-white" /> : <CommentIcon />}
@@ -102,14 +108,14 @@ const HelpWidget = () => {
         <div className="absolute bottom-16 right-0 bg-white w-64 rounded-lg shadow-lg p-4 z-10">
           {/* Header */}
           <div className="flex items-center justify-between border-b pb-2 mb-3">
-            <h3 className="text-red-600 text-sm font-bold mb-0 ">
+            <h3 className="text-[#4f4d46] text-sm font-bold mb-0 ">
               Need help? Contact us!
             </h3>
             <button
               // className="text-gray-500 hover:text-gray-700"
               onClick={toggleWidget}
             >
-              <CloseIcon className="stroke-red-600" />
+              <CloseIcon className="stroke-[#4f4d46]" />
             </button>
           </div>
 
