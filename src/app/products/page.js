@@ -12,13 +12,14 @@ import BOOK_Big1 from "../../../image/Product/BOOK MATCH 002_Big.png";
 import BOOK_Small1 from "../../../image/Product/BOOK MATCH 002_Small.png";
 import { baseURL } from "../../utils/config";
 
-
-
 const Breadcrumb = () => (
   <nav className="container" aria-label="breadcrumb">
     <ol className="breadcrumb">
       <li className="breadcrumb-item text-black">
-        <a href="/" className="text-black-rock-Black no-underline hover:underline">
+        <a
+          href="/"
+          className="text-black-rock-Black no-underline hover:underline"
+        >
           Home
         </a>
       </li>
@@ -35,9 +36,9 @@ const page = () => {
     <>
       <Breadcrumb />
       <WallCollection />
-      <hr/>
+      <hr />
       <Wall />
-      <hr/>
+      <hr />
       <Strip />
       {/* <Container className="">
             <Row>
@@ -49,7 +50,6 @@ const page = () => {
               </Col>
             </Row>
       </Container> */}
-      
     </>
   );
 };
