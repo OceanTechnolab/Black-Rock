@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Product1 from "@/components/Product/Product1";
+import Product1 from "@/components/Product/WallCollection";
 import Product2 from "@/components/Product/Product2";
 import PageJSON_LD from "@/components/Schema/PageJSON_LD";
 import { DownloadIcon, EyeIcon } from "@/utils/icon"; 

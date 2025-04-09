@@ -1,5 +1,5 @@
 import React from "react";
-import Product1 from "@/components/Product/Product1";
+import Product1 from "@/components/Product/WallCollection";
 import Ceramic from "@/components/Product/Ceramic-wall";
 import PageJSON_LD from "@/components/Schema/PageJSON_LD";
 import { Col, Container, Row } from "react-bootstrap";

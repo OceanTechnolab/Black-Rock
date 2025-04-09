@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Product1 from "@/components/Product/Product1";
+import WallCollection from "@/components/Product/WallCollection";
 import Wall from "@/components/Product/Wall";
 import Strip from "@/components/Product/Strip";
 import PageJSON_LD from "@/components/Schema/PageJSON_LD";
@@ -34,7 +34,7 @@ const page = () => {
   return (
     <>
       <Breadcrumb />
-      <Product1 />
+      <WallCollection />
       <hr/>
       <Wall />
       <hr/>

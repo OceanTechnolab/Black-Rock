@@ -2,7 +2,8 @@ import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import ProductImg from "../../../image/Product/Product1.png";
-const Product1 = () => {
+
+const WallCollection = () => {
   return (
     <Container>
       <Row className="my-3">
@@ -41,4 +42,4 @@ const Product1 = () => {
   );
 };
 
-export default Product1;
+export default WallCollection;

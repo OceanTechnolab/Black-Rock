@@ -1,5 +1,5 @@
 import React from "react";
-import Product1 from "@/components/Product/Product1";
+import Product1 from "@/components/Product/WallCollection";
 import Data from "@/components/Product/Strip-200x1000";
 import PageJSON_LD from "@/components/Schema/PageJSON_LD";
 import { Col, Container, Row } from "react-bootstrap";
