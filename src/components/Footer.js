@@ -156,7 +156,7 @@ const Footer = () => {
       initial={{ opacity: 0, x: 30 }}
       animate={isVisibleTitle ? { opacity: 1, x: 0 } : {}}
       transition={{ duration: 1, ease: "easeOut" }}
-      className="lg:mt-36 mt-10 bg-black-rock-Black py-5"
+      className="lg:mt-2 bg-black-rock-Black py-5"
     >
       <Container className=" ">
        
