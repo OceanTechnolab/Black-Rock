@@ -6,6 +6,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import BOOK_Big1 from "../../../image/Product/BOOK MATCH 002_Big.png";
 import BOOK_Small1 from "../../../image/Product/BOOK MATCH 002_Small.png";
 import { baseURL } from "../../utils/config";
+import "./ceramic.css";
 
 // Main Component
 const Catalogue2 = () => {
@@ -19,6 +20,7 @@ const Catalogue2 = () => {
               </h2>
             </Col>
           </Row>
+
            <Row className="">
                        <Col
                          lg={6}
@@ -28,7 +30,7 @@ const Catalogue2 = () => {
                            <Image
                              src="/wall-ceramic/200X300MM/ELEVATION1_200X300MM_2004.jpg"
                              fill
-                             className="object-cover rounded-xl drop-shadow-lg"
+                             className="object-cover rounded-xl drop-shadow-lg bob-animation"
                              alt="Body Elevation"
                              title="Body Elevation"
                            />
@@ -62,7 +64,7 @@ const Catalogue2 = () => {
                                <Image
                                  src="/wall-ceramic/200X300MM/ELEVATION2_200X300MM_2004_TILES.jpg"
                                  fill
-                                 className="object-cover rounded-xl drop-shadow-lg"
+                                 className="object-cover rounded-xl drop-shadow-lg bob-animation"
                                  alt="Product Image"
                                  title="Product Image"
                                />
@@ -78,7 +80,7 @@ const Catalogue2 = () => {
                              <Image
                                src="\wall-ceramic\200X300MM\ORDINARY 200X300MM BLACKROCK___136.jpg"
                                fill
-                               className="object-cover rounded-xl drop-shadow-lg"
+                               className="object-cover rounded-xl drop-shadow-lg bob-animation"
                                alt="Body Ordinary"
                                title="Body Ordinary"
                              />
@@ -112,7 +114,7 @@ const Catalogue2 = () => {
                                <Image
                                  src="\wall-ceramic\200X300MM\ORDINARY 200X300MM BLACKROCK___136 TILES.jpg"
                                  fill
-                                 className="object-cover rounded-xl drop-shadow-lg"
+                                 className="object-cover rounded-xl drop-shadow-lg bob-animation"
                                  alt="Product Image"
                                  title="Product Image"
                                />
@@ -131,7 +133,7 @@ const Catalogue2 = () => {
                            <Image
                              src="/wall-ceramic/200X300MM/ELEVATION1 200X300MM_2022.jpg"
                              fill
-                             className="object-cover rounded-xl drop-shadow-lg"
+                             className="object-cover rounded-xl drop-shadow-lg bob-animation"
                              alt="Body Elevation"
                              title="Body Elevation"
                            />
@@ -165,7 +167,7 @@ const Catalogue2 = () => {
                                <Image
                                  src="/wall-ceramic/200X300MM/ELEVATION2 200X300MM_2022_TILES.jpg"
                                  fill
-                                 className="object-cover rounded-xl drop-shadow-lg"
+                                 className="object-cover rounded-xl drop-shadow-lg bob-animation"
                                  alt="Product Image"
                                  title="Product Image"
                                />
@@ -181,7 +183,7 @@ const Catalogue2 = () => {
                              <Image
                                src="/wall-ceramic/200X300MM/ORDINARY 200X300MM BLACKROCK___223.jpg"
                                fill
-                               className="object-cover rounded-xl drop-shadow-lg"
+                               className="object-cover rounded-xl drop-shadow-lg bob-animation"
                                alt="Body Ordinary"
                                title="Body Ordinary"
                              />
@@ -215,7 +217,7 @@ const Catalogue2 = () => {
                                <Image
                                  src="/wall-ceramic/200X300MM/ORDINARY 200X300MM BLACKROCK___223 TILES.jpg"
                                  fill
-                                 className="object-cover rounded-xl drop-shadow-lg"
+                                 className="object-cover rounded-xl drop-shadow-lg bob-animation"
                                  alt="Product Image"
                                  title="Product Image"
                                />

@@ -1,0 +1,12 @@
+:hover.bob-animation {
+    animation: bob 2s infinite;
+  }
+  
+  @keyframes bob {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-3px);
+    }
+  }
