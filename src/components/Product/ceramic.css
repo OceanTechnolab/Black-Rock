@@ -1,4 +1,4 @@
-:hover.bob-animation {
+.bob-animation:hover {
     animation: bob 2s infinite;
   }
   
@@ -7,6 +7,81 @@
       transform: translateY(0);
     }
     50% {
-      transform: translateY(-3px);
+      transform: translateY(-5px);
     }
+  }
+
+  /* Responsive adjustments */
+@media (max-width: 768px) {
+    .bob-animation:hover {
+      animation: bob 1.5s infinite; /* Faster animation for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bob-animation:hover {
+      animation: none; /* Disable animation on very small screens */
+    }
+  } 
+  /* .image-container { */
+    /* position: relative; */
+    /* perspective: 1000px; Add perspective for 3D effect */
+  /* } */
+  
+  /* Rotate the first image on hover */
+  /* .image-container .image-1 { */
+    /* transition: transform 1s ease-in-out; Smooth transition for rotation */
+  /* } */
+  
+  /* .image-container .image-1:hover { */
+    /* transform: rotateY(180deg); Rotate 180 degrees on hover */
+  /* } */
+  
+  /* Reset the second image when hover ends */
+  /* .image-container .image-2 { */
+    /* transition: transform 1s ease-in-out; Smooth transition for reset */
+  /* } */
+  
+  /* .image-container .image-1:hover ~ .image-2 { */
+    /* transform: rotateY(90deg) scale(1.1); Rotate and scale the second image */
+  /* }   */
+
+  /* Container for the flip effect */
+.image-container {
+    position: relative;
+    width: 100%; /* Adjust as needed */
+    /* height: 100%; Adjust as needed */
+    perspective: 1000px; /* Add perspective for 3D effect */
+  }
+  
+  /* Inner container for flipping */
+  .image-container-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; /* Enable 3D transformations */
+    transition: transform 1s ease-in-out; /* Smooth transition for rotation */
+  }
+  
+  /* Flip the inner container on hover */
+  .image-container:hover .image-container-inner {
+    transform: rotateY(180deg); /* Rotate 180 degrees on hover */
+  }
+
+  /* Front side (image-1) */
+.image-container .image-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back side when facing away */
+    transform: rotateY(0deg); /* Default position */
+  }
+  
+  /* Back side (image-2) */
+  .image-container .image-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the front side when facing away */
+    transform: rotateY(180deg); /* Position the back side */
   }

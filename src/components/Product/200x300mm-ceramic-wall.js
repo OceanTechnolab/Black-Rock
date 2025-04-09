@@ -8,8 +8,8 @@ import BOOK_Small1 from "../../../image/Product/BOOK MATCH 002_Small.png";
 import { baseURL } from "../../utils/config";
 import "./ceramic.css";
 
-// Main Component
 const Catalogue2 = () => {
+  
   return (
     <>
       <Container>
@@ -26,14 +26,23 @@ const Catalogue2 = () => {
                          lg={6}
                          className="mb-10 container"
                        >
-                         <div className="h-[390px] relative rounded-xl mb-3">
+                         <div className="h-[390px] relative rounded-xl mb-3 image-container">
+                         <div className="image-container-inner">
                            <Image
                              src="/wall-ceramic/200X300MM/ELEVATION1_200X300MM_2004.jpg"
                              fill
-                             className="object-cover rounded-xl drop-shadow-lg bob-animation"
+                             className="object-cover rounded-xl drop-shadow-lg image-1"
                              alt="Body Elevation"
                              title="Body Elevation"
                            />
+                            <Image
+                                 src="/wall-ceramic/200X300MM/ELEVATION2_200X300MM_2004_TILES.jpg"
+                                 fill
+                                 className="object-cover rounded-xl drop-shadow-lg image-2"
+                                 alt="Product Image"
+                                 title="Product Image"
+                               />
+                            </div>
                          </div>
                          <Row>
                            <Col xs={4} md={4} lg={4} xl={4} className="">
@@ -76,14 +85,23 @@ const Catalogue2 = () => {
                          lg={6}
                          className="mb-10 container"
                        >
-                         <div className="h-[390px] relative rounded-xl mb-3">
+                         <div className="h-[390px] relative rounded-xl mb-3 image-container">
+                         <div className="image-container-inner">
                              <Image
                                src="\wall-ceramic\200X300MM\ORDINARY 200X300MM BLACKROCK___136.jpg"
                                fill
-                               className="object-cover rounded-xl drop-shadow-lg bob-animation"
+                               className="object-cover rounded-xl drop-shadow-lg image-1"
                                alt="Body Ordinary"
                                title="Body Ordinary"
                              />
+                              <Image
+                                 src="\wall-ceramic\200X300MM\ORDINARY 200X300MM BLACKROCK___136 TILES.jpg"
+                                 fill
+                                 className="object-cover rounded-xl drop-shadow-lg image-2"
+                                 alt="Product Image"
+                                 title="Product Image"
+                               />
+                             </div>
                          </div>
                          <Row>
                            <Col xs={4} md={4} lg={4} xl={4}>
@@ -129,14 +147,23 @@ const Catalogue2 = () => {
                          lg={6}
                          className="mb-10 container"
                        >
-                         <div className="h-[390px] relative rounded-xl mb-3">
+                        <div className="h-[390px] relative rounded-xl mb-3 image-container">
+                         <div className="image-container-inner">
                            <Image
                              src="/wall-ceramic/200X300MM/ELEVATION1 200X300MM_2022.jpg"
                              fill
-                             className="object-cover rounded-xl drop-shadow-lg bob-animation"
+                             className="object-cover rounded-xl drop-shadow-lg image-1"
                              alt="Body Elevation"
                              title="Body Elevation"
                            />
+                            <Image
+                                 src="/wall-ceramic/200X300MM/ELEVATION2 200X300MM_2022_TILES.jpg"
+                                 fill
+                                 className="object-cover rounded-xl drop-shadow-lg image-2"
+                                 alt="Product Image"
+                                 title="Product Image"
+                               />
+                            </div>
                          </div>
                          <Row>
                            <Col xs={4} md={4} lg={4} xl={4} className="">
@@ -179,14 +206,24 @@ const Catalogue2 = () => {
                          lg={6}
                          className="mb-10 container"
                        >
-                         <div className="h-[390px] relative rounded-xl mb-3">
-                             <Image
-                               src="/wall-ceramic/200X300MM/ORDINARY 200X300MM BLACKROCK___223.jpg"
-                               fill
-                               className="object-cover rounded-xl drop-shadow-lg bob-animation"
-                               alt="Body Ordinary"
-                               title="Body Ordinary"
-                             />
+
+                        <div className="h-[390px] relative rounded-xl mb-3 image-container">
+                         <div className="image-container-inner">
+                           <Image
+                             src="/wall-ceramic/200X300MM/ORDINARY 200X300MM BLACKROCK___223.jpg"
+                             fill
+                             className="object-cover rounded-xl drop-shadow-lg image-1"
+                             alt="Body Elevation"
+                             title="Body Elevation"
+                           />
+                            <Image
+                                 src="/wall-ceramic/200X300MM/ORDINARY 200X300MM BLACKROCK___223 TILES.jpg"
+                                 fill
+                                 className="object-cover rounded-xl drop-shadow-lg image-2"
+                                 alt="Product Image"
+                                 title="Product Image"
+                               />
+                            </div>
                          </div>
                          <Row>
                            <Col xs={4} md={4} lg={4} xl={4}>
