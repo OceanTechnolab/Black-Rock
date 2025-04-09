@@ -155,7 +155,7 @@ const Menu = ({ setIsMenuOpen }) => {
             </p>
             <div className="flex justify-end">
               <div className="flex gap-2">
-                <Link href={"https://www.instagram.com/blackrock_Porcelano/"} title="Instagram Link" className=" lg:-mt-14" target="_blank">
+                <Link href={"https://www.instagram.com/blackrock_porcelain/"} title="Instagram Link" className=" lg:-mt-14" target="_blank">
                   <InstaGramIcon />
                 </Link>
                 <span className=" lg:-mt-14">

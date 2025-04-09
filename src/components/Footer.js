@@ -259,7 +259,7 @@ const Footer = () => {
             >
               <span className="text-black-rock-Grey2">- Follow Us</span>
               <Link
-                href={"https://www.instagram.com/blackrock_Porcelano/"}
+                href={"https://www.instagram.com/blackrock_porcelain/"}
                 title="Instagram Link"
                 target="_blank"
               >
@@ -410,7 +410,7 @@ export default Footer;
 //             transition={{ duration: 1.6, ease: "easeOut" }}
 //             className="flex justify-center items-center gap-x-[10px] my-3"
 //           >
-//             <Link href={"https://www.instagram.com/blackrock_Porcelano/"} title="Instagram Link" target="_blank">
+//             <Link href={"https://www.instagram.com/blackrock_porcelain/"} title="Instagram Link" target="_blank">
 //               <InstaGramIcon />
 //             </Link>
 //             <span>
