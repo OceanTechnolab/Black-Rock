@@ -85,3 +85,72 @@
     backface-visibility: hidden; /* Hide the front side when facing away */
     transform: rotateY(180deg); /* Position the back side */
   }
+
+   h1 {
+      font-size: 3em;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    h1 span {
+      font-family: 'Brush Script MT', cursive;
+      color: #7d7d7d;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 1rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: floatIn 1s ease forwards;
+      opacity: 0;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    }
+    .tile-img {
+      height: 120px;
+      width: 100%;
+      background: #ddd;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    .tag {
+      background: #e0dfd5;
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+    .size {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #222;
+    }
+
+    @keyframes floatIn {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+    }
