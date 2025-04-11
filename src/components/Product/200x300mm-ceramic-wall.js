@@ -45,11 +45,10 @@ const Catalogue2 = () => {
                 <p className="md:text-[26px] md:leading-[31px] text-lg leading-[22px] font-ivarRegular uppercase">
                   ELEVATION
                 </p>
-                {/* href={`${baseURL}NAME.pdf`} */}
                 <a
-                  href="#"
+                  href={`${baseURL}elevation-200x300mm-digital-blackrock.pdf`}
                   className=""
-                  // target="_blank" //Enable this for opening in new tab
+                  target="_blank" //Enable this for opening in new tab
                 >
                   <div
                     className="circle-animation  w-[90px] h-[90px] rounded-full border-2 border-black-rock-Grey relative cursor-pointer"
@@ -107,11 +106,10 @@ const Catalogue2 = () => {
                 <p className="md:text-[26px] md:leading-[31px] text-lg leading-[22px] font-ivarRegular uppercase">
                   ORDINARY
                 </p>
-                {/* href={`${baseURL}NAME.pdf`} */}
                 <a
-                  href="#"
+                  href={`${baseURL}ordinary-200x300mm-blackrock.pdf`}
                   className=""
-                  // target="_blank" //Enable this for opening in new tab
+                  target="_blank" //Enable this for opening in new tab
                 >
                   <div
                     className="circle-animation  w-[90px] h-[90px] rounded-full border-2 border-black-rock-Grey relative cursor-pointer"
@@ -172,11 +170,10 @@ const Catalogue2 = () => {
                 <p className="md:text-[26px] md:leading-[31px] text-lg leading-[22px] font-ivarRegular uppercase">
                   ELEVATION
                 </p>
-                {/* href={`${baseURL}NAME.pdf`} */}
                 <a
-                  href="#"
+                  href={`${baseURL}elevation-200x300mm-digital-blackrock.pdf`}
                   className=""
-                  // target="_blank" //Enable this for opening in new tab
+                  target="_blank" //Enable this for opening in new tab
                 >
                   <div
                     className="circle-animation  w-[90px] h-[90px] rounded-full border-2 border-black-rock-Grey relative cursor-pointer"
@@ -234,11 +231,10 @@ const Catalogue2 = () => {
                 <p className="md:text-[26px] md:leading-[31px] text-lg leading-[22px] font-ivarRegular uppercase">
                   ORDINARY
                 </p>
-                {/* href={`${baseURL}NAME.pdf`} */}
                 <a
-                  href="#"
+                  href={`${baseURL}ordinary-200x300mm-blackrock.pdf`}
                   className=""
-                  // target="_blank" //Enable this for opening in new tab
+                  target="_blank" //Enable this for opening in new tab
                 >
                   <div
                     className="circle-animation  w-[90px] h-[90px] rounded-full border-2 border-black-rock-Grey relative cursor-pointer"
