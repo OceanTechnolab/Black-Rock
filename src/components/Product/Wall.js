@@ -67,15 +67,16 @@ const page = () => {
             animate={{ x: 0, opacity: 1 }} // Slide in and become visible
             transition={{ duration: 0.9 }} // Smooth transition
           >
-          <div className="h-[390px] relative rounded-xl mb-3">
+          <div className="h-[390px] image-container relative rounded-xl mb-3">
           <a href="/products/wall-ceramic/" className="">
             <Image
               src="/wall-ceramic/200X300MM/ELEVATION1_200X300MM_2004.jpg"
               fill
               className="object-cover rounded-xl drop-shadow-lg bob-animation"
-              alt="Ceramic Body Tiles"
-              title="Ceramic Body Tiles"
+              alt="Ceramic Tiles"
+              title="Ceramic Tiles"
             />
+            <div className="overlay"></div>
             </a>
           </div>
           <Row>
