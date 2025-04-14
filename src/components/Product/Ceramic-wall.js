@@ -15,7 +15,7 @@ const page = () => {
     className="relative w-full flex "
     initial="initial"
     animate="animate"
-    style={{ zIndex: 50, height: "60vh", overflow: "hidden" }}
+    style={{ zIndex: 50, height: "80vh", overflow: "hidden" }}
   >
     {/* Left Image Animation */}
     <motion.div
@@ -39,8 +39,8 @@ const page = () => {
 
     {/* Content Animation */}
     <motion.div
-      className="absolute w-full flex justify-center items-center mt-28"
-      style={{ height: "50%", zIndex: 100 }} // Match the height of the images
+      className="absolute w-full flex justify-center items-center"
+      style={{ height: "66%", zIndex: 100 }} // Match the height of the images
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1, delay: 0.75 }}
@@ -51,7 +51,9 @@ const page = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1.5 }}
       >
-        <Row className="mt-1 xl:px-[20rem] lg:px-10 md:py-5 py-2 align-items-center">
+        <Row className="mt-1 xl:px-[20rem] lg:px-10 md:py-5 py-2 align-items-center"
+        // style={{ height: "500px" }}
+        >
           <Col xs={12} sm={6} md className="flex flex-col items-center">
             <Image
               src="/BlackRock-main.png"
@@ -65,90 +67,90 @@ const page = () => {
             />
           </Col>
           <Col xs={12} md className="flex flex-col items-center">
-            <ul className="p-0 font-ivarRegular text-center pt-2">
+            <ul className="p-0 font-ivarRegular text-center pt-2 space-y-2">
               <li>
-                <a
-                  href="/products/wall-ceramic/200X300MM"
-                  className="text-black-rock-Black no-underline hover:underline"
-                >
-                  200 X 300 MM
-                </a>
+              <button
+                onClick={() => window.location.href = "/products/wall-ceramic/200X300MM"}
+                className="text-black-rock-Black text-lg no-underline hover:underline px-2 py-3 border-1 border-gray-300 rounded-md hover:bg-gray-300 hover:text-black transition w-full mb-1"
+              >
+                200 X 300 MM
+              </button>
               </li>
               <li>
-                <a
-                  href="/products/wall-ceramic/200X600MM"
-                  className="text-black-rock-Black no-underline hover:underline"
-                >
-                  200 X 600 MM
-                </a>
-              </li>
-            </ul>
-          </Col>
-
-          {/* Divider */}
-          <Col xs="12" md="auto" className="flex justify-center">
-            <div className="md:border-l border-b border-[#464549] md:h-[220px] md:w-0 w-full"></div>
-          </Col>
-
-          <Col xs={12} md className="flex flex-col items-center pt-2">
-            <ul className="p-0 font-ivarRegular text-center">
-              <li>
-                <a
-                  href="/products/wall-ceramic/250X375MM"
-                  className="text-black-rock-Black no-underline hover:underline"
-                >
-                  250 X 375 MM
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/products/wall-ceramic/250X400MM"
-                  className="text-black-rock-Black no-underline hover:underline"
-                >
-                  250 X 400 MM
-                </a>
+              <button
+                onClick={() => window.location.href = "/products/wall-ceramic/200X600MM"}
+                className="text-black-rock-Black text-lg no-underline hover:underline px-2 py-3 border-1 border-gray-300 rounded-md hover:bg-gray-300 hover:text-black transition w-full"
+              >
+                200 X 600 MM
+              </button>
               </li>
             </ul>
           </Col>
 
           {/* Divider */}
           <Col xs="12" md="auto" className="flex justify-center">
-            <div className="md:border-l border-b border-[#464549] md:h-[220px] md:w-0 w-full"></div>
+            <div className="md:border-l border-b border-[#464549] md:h-[270px] md:w-0 w-full"></div>
           </Col>
 
           <Col xs={12} md className="flex flex-col items-center pt-2">
-            <ul className="p-0 font-ivarRegular text-center">
+            <ul className="p-0 font-ivarRegular text-center space-y-2">
               <li>
-                <a
-                  href="/products/wall-ceramic/300X300MM"
-                  className="text-black-rock-Black no-underline hover:underline"
-                >
-                  300 X 300 MM
-                </a>
+              <button
+                onClick={() => window.location.href = "/products/wall-ceramic/250X375MM"}
+                className="text-black-rock-Black text-lg no-underline hover:underline px-2 py-3 border-1 border-gray-300 rounded-md hover:bg-gray-300 hover:text-black transition w-full mb-1"
+              >
+                250 X 375 MM
+              </button>
               </li>
               <li>
-                <a
-                  href="/products/wall-ceramic/300X450MM"
-                  className="text-black-rock-Black no-underline hover:underline"
-                >
-                  300 X 450 MM
-                </a>
+              <button
+                onClick={() => window.location.href = "/products/wall-ceramic/250X400MM"}
+                className="text-black-rock-Black text-lg no-underline hover:underline px-2 py-3 border-1 border-gray-300 rounded-md hover:bg-gray-300 hover:text-black transition w-full"
+              >
+                250 X 400 MM
+              </button>
+              </li>
+            </ul>
+          </Col>
+
+          {/* Divider */}
+          <Col xs="12" md="auto" className="flex justify-center">
+            <div className="md:border-l border-b border-[#464549] md:h-[290px] md:w-0 w-full"></div>
+          </Col>
+
+          <Col xs={12} md className="flex flex-col items-center pt-2">
+            <ul className="p-0 font-ivarRegular text-center space-y-2 ">
+              <li>
+              <button
+                onClick={() => window.location.href = "/products/wall-ceramic/300X300MM"}
+                className="text-black-rock-Black text-lg no-underline hover:underline px-2 py-3 border-1 border-gray-300 rounded-md hover:bg-gray-300 hover:text-black transition w-full mb-1"
+              >
+                300 X 300 MM
+              </button>
               </li>
               <li>
-                <a
-                  href="/products/wall-ceramic/300X600MM"
-                  className="text-black-rock-Black no-underline hover:underline"
-                >
-                  300 X 600 MM
-                </a>
+              <button
+                onClick={() => window.location.href = "/products/wall-ceramic/300X450MM"}
+                className="text-black-rock-Black text-lg no-underline hover:underline px-2 py-3 border-1 border-gray-300 rounded-md hover:bg-gray-300 hover:text-black transition w-full mb-1"
+              >
+                300 X 450 MM
+              </button>
               </li>
               <li>
-                <a
-                  href="/products/wall-ceramic/300X750MM"
-                  className="text-black-rock-Black no-underline hover:underline"
-                >
-                  300 X 750 MM
-                </a>
+              <button
+                onClick={() => window.location.href = "/products/wall-ceramic/300X600MM"}
+                className="text-black-rock-Black text-lg no-underline hover:underline px-2 py-3 border-1 border-gray-300 rounded-md hover:bg-gray-300 hover:text-black transition w-full mb-1"
+              >
+                300 X 600 MM
+              </button>
+              </li>
+              <li>
+              <button
+                onClick={() => window.location.href = "/products/wall-ceramic/300X750MM"}
+                className="text-black-rock-Black text-lg no-underline hover:underline px-2 py-3 border-1 border-gray-300 rounded-md hover:bg-gray-300 hover:text-black transition w-full "
+              >
+                300 X 750 MM
+              </button>
               </li>
             </ul>
           </Col>
