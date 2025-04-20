@@ -15,7 +15,7 @@ const page = () => {
     className="relative w-full flex "
     initial="initial"
     animate="animate"
-    style={{ zIndex: 50, height: "80vh", overflow: "hidden" }}
+    style={{ zIndex: 50, height: "69vh", overflow: "hidden" }}
   >
     {/* Left Image Animation */}
     <motion.div
@@ -40,7 +40,7 @@ const page = () => {
     {/* Content Animation */}
     <motion.div
       className="absolute w-full flex justify-center items-center"
-      style={{ height: "66%", zIndex: 100 }} // Match the height of the images
+      style={{ height: "100%", top: 0, left: 0, right: 0, bottom: 0, zIndex: 100 }} // Match the height of the images
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1, delay: 0.75 }}
@@ -51,7 +51,7 @@ const page = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1.5 }}
       >
-        <Row className="mt-1 xl:px-[20rem] lg:px-10 md:py-5 py-2 align-items-center"
+        <Row className="mt-10 xl:px-[20rem] lg:px-10 md:py-5 py-2 align-items-center"
         // style={{ height: "500px" }}
         >
           <Col xs={12} sm={6} md className="flex flex-col items-center">
