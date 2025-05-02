@@ -15,7 +15,7 @@ const Catalogue2 = () => {
       <Container className="mb-16">
           <Row>
             <Col xs={12}>
-              <h2 className="mt-16 text-60 leading-[66px] font-ivarRegular uppercase md:mb-6">
+              <h2 className="mt-2 text-50 leading-[66px] font-ivarRegular uppercase md:mb-6">
                 300 X 450 MM
               </h2>
             </Col>

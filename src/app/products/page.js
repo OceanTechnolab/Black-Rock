@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Product1 from "@/components/Product/Product1";
+import WallCollection from "@/components/Product/WallCollection";
 import Wall from "@/components/Product/Wall";
 import Strip from "@/components/Product/Strip";
 import PageJSON_LD from "@/components/Schema/PageJSON_LD";
@@ -12,13 +12,14 @@ import BOOK_Big1 from "../../../image/Product/BOOK MATCH 002_Big.png";
 import BOOK_Small1 from "../../../image/Product/BOOK MATCH 002_Small.png";
 import { baseURL } from "../../utils/config";
 
-
-
 const Breadcrumb = () => (
   <nav className="container" aria-label="breadcrumb">
     <ol className="breadcrumb">
       <li className="breadcrumb-item text-black">
-        <a href="/" className="text-black-rock-Black no-underline hover:underline">
+        <a
+          href="/"
+          className="text-black-rock-Black no-underline hover:underline"
+        >
           Home
         </a>
       </li>
@@ -34,10 +35,10 @@ const page = () => {
   return (
     <>
       <Breadcrumb />
-      <Product1 />
-      <hr/>
+      <WallCollection />
+      <hr />
       <Wall />
-      <hr/>
+      <hr />
       <Strip />
       {/* <Container className="">
             <Row>
@@ -49,7 +50,6 @@ const page = () => {
               </Col>
             </Row>
       </Container> */}
-      
     </>
   );
 };

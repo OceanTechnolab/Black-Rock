@@ -54,7 +54,7 @@ const HomePageJSON_LD = () => {
               "Discover Blackrock Porcelano's exceptional collection of ceramic and Porcelano tiles. Ideal for floors, walls, kitchens, and bathrooms—where style meets durability.",
             logo: `/600x1200_Logo.png`,
             email: "info@blackrockporcelano.com",
-            sameAs: ["https://www.instagram.com/blackrock_Porcelano/"],
+            sameAs: ["https://www.instagram.com/blackrock_porcelain/"],
           }),
         }}
       />

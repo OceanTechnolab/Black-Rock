@@ -1,4 +1,4 @@
-import Product1 from "@/components/Product/Product1";
+import Product1 from "@/components/Product/WallCollection";
 import Product2 from "@/components/Product/Product2";
 import PageJSON_LD from "@/components/Schema/PageJSON_LD";
 import { NEXT_PUBLIC_WEB_URL } from "@/utils/constant";

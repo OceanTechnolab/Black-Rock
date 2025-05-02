@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Product1 from "@/components/Product/Product1";
+import Product1 from "@/components/Product/WallCollection";
 import Product2 from "@/components/Product/Product2";
 import PageJSON_LD from "@/components/Schema/PageJSON_LD";
 import { Col, Container, Row } from "react-bootstrap";
@@ -12,8 +12,7 @@ import BOOK_Big1 from "../../../image/Product/BOOK MATCH 002_Big.png";
 import BOOK_Small1 from "../../../image/Product/BOOK MATCH 002_Small.png";
 import { baseURL } from "../../utils/config";
 import { motion } from "framer-motion";
-
-
+import "./ceramic.css";
 
 
 const Breadcrumb = () => (
@@ -63,15 +62,22 @@ const page = () => {
           lg={6}
           className=" mb-10 container"
         >
-          <div className="h-[390px] relative rounded-xl mb-3">
+          <motion.div
+            initial={{ x: "-100%", opacity: 0 }} // Start off-screen to the left
+            animate={{ x: 0, opacity: 1 }} // Slide in and become visible
+            transition={{ duration: 0.9 }} // Smooth transition
+          >
+          <div className="h-[390px] image-container relative rounded-xl mb-3">
           <a href="/products/wall-ceramic/" className="">
             <Image
-              src={`${baseURL}cs2.webp`}
+              src="/wall-ceramic/200X300MM/ELEVATION1_200X300MM_2004.jpg"
               fill
-              className="object-cover rounded-xl drop-shadow-lg"
-              alt="Ceramic Body Tiles"
-              title="Ceramic Body Tiles"
-            /></a>
+              className="object-cover rounded-xl drop-shadow-lg bob-animation"
+              alt="Ceramic Tiles"
+              title="Ceramic Tiles"
+            />
+            <div className="overlay"></div>
+            </a>
           </div>
           <Row>
             <Col xs={8} md={8} lg={6} xl={5}>
@@ -84,20 +90,26 @@ const page = () => {
             <Col xs={4} md={4} lg={6} xl={7}>
               <div className="xl:h-[150px] md:h-[100px] h-[50px] relative">
                 <Image
-                  src={`${baseURL}cs3.webp`}
+                  src="/wall-ceramic/200X300MM/ELEVATION2_200X300MM_2004_TILES.jpg"
                   fill
-                  className="object-cover rounded-xl drop-shadow-lg"
+                  className="object-cover rounded-xl drop-shadow-lg bob-animation"
                   alt="Product Image"
                   title="Product Image"
                 />
               </div>
             </Col>
           </Row>
+        </motion.div>
         </Col>
         <Col
           lg={6}
           className="mb-10 container"
         >
+          <motion.div
+            initial={{ x: "100%", opacity: 0 }} // Start off-screen to the left
+            animate={{ x: 0, opacity: 1 }} // Slide in and become visible
+            transition={{ duration: 0.9 }} // Smooth transition
+          >
           <div className="h-[390px] relative rounded-xl mb-3">
             <a href="/products/wall-porcelian/" className="">
               <Image
@@ -129,6 +141,7 @@ const page = () => {
               </div>
             </Col>
           </Row>
+          </motion.div>
         </Col>
       </Row>
     </>
