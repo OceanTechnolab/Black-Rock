@@ -3,8 +3,8 @@ import { DownloadIcon, EyeIcon } from "@/utils/icon";
 import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { baseURL } from "../../../../utils/config";import "./ceramic.css";
-
+import { baseURL } from "../../../../utils/config";
+import "../../../../styles/product-card.css";
 
 // Main Component
 const Catalogue2 = () => {

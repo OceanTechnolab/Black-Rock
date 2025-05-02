@@ -3,7 +3,7 @@ import Product1 from "@/components/Product/WallCollection";
 import Product2 from "@/components/Product/Product2";
 import PageJSON_LD from "@/components/Schema/PageJSON_LD";
 import { NEXT_PUBLIC_WEB_URL } from "@/utils/constant";
-import Data from "@/components/Product/250x400mm-ceramic-wall";
+import Data from "@/components/Product/Wall/Ceramic/250x400mm-ceramic-wall";
 
 const Breadcrumb = () => (
   <nav className="container" aria-label="breadcrumb">
