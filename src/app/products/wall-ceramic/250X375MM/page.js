@@ -11,7 +11,7 @@ const Breadcrumb = () => (
       <li className="breadcrumb-item"><a href="/" className="text-gray-700">Home</a></li>
       <li className="breadcrumb-item"><a href="/products" className="text-gray-700">Products</a></li>
       <li className="breadcrumb-item"><a href="/products/wall-ceramic" className="text-gray-700">Wall-Ceramic</a></li>
-      <li className="breadcrumb-item active" aria-current="page">200 X 300 MM</li>
+      <li className="breadcrumb-item active" aria-current="page">250 X 400 MM</li>
     </ol>
   </nav>
 );
