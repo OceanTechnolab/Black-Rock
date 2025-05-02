@@ -6,7 +6,7 @@ import { LinesImageSVG } from "@/utils/icon";
 
 const aboutData = {
   mainTitles: {
-    title1: "The Morbi’s Most",
+    title1: "Morbi’s Most",
     title2: "Sought-After",
     title3: "Luxury Tile Brand"
   },
