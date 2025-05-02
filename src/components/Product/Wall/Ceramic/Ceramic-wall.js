@@ -2,9 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion"; // Import framer-motion
-import Home2 from "../../../image/Home/home11.jpg";
-import Home3 from "../../../image/Home/home11.jpg"; // Second image
-import Link from "next/link";
 import { Col, Row } from "react-bootstrap";
 
 const page = () => {
