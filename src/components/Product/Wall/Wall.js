@@ -81,11 +81,11 @@ const page = () => {
         </Col>
         <Col lg={6} className="mb-10 container">
           <motion.div
-            initial={{ x: "-100%", opacity: 0 }}
+            initial={{ x: "100%", opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.9 }}
           >
-            <div className="h-[390px] relative rounded-xl mb-3">
+            <div className="h-[390px] image-container relative rounded-xl mb-3">
               <a href="/products/wall-porcelian/" className="">
                 <Image
                   src="/wall-porcelain/BLACKROCK-300X600MM- MASTER-Mockup.jpg"
