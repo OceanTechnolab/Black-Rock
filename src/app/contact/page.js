@@ -2,11 +2,22 @@ import Contact from "@/components/Contact/Contact";
 import PageJSON_LD from "@/components/Schema/PageJSON_LD";
 import { NEXT_PUBLIC_WEB_URL } from "@/utils/constant";
 import React from "react";
+import Breadcrumbs from "@/components/Common/Breadcrumbs";
+
+const Breadcrumb = () => (
+  <Breadcrumbs
+    items={[
+      { label: "Home", href: "/", active: false },
+      { label: "Contact-Us", active: true }
+    ]}
+  />
+);
 
 const page = () => {
   return (
     <>
-     <PageJSON_LD name={"Contact"} pathName={"contact"}/>
+      <Breadcrumb />
+      <PageJSON_LD name={"Contact"} pathName={"contact"} />
       <Contact />
     </>
   );

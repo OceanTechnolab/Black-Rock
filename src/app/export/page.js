@@ -5,10 +5,21 @@ import AboutSec5 from "@/components/About/AboutSec5";
 import { NEXT_PUBLIC_WEB_URL } from "@/utils/constant";
 import ExportPallet from "@/components/Export/ExportPallet";
 import PageJSON_LD from "@/components/Schema/PageJSON_LD";
+import Breadcrumbs from "@/components/Common/Breadcrumbs";
+
+const Breadcrumb = () => (
+  <Breadcrumbs
+    items={[
+      { label: "Home", href: "/", active: false },
+      { label: "Export", active: true }
+    ]}
+  />
+);
 
 const page = () => {
   return (
     <>
+      <Breadcrumb />
       <PageJSON_LD name={"Export"} pathName={"export"} />
       <Export1 />
       <Export2 />
