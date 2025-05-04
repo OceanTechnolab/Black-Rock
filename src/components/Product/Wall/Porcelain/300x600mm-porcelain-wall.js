@@ -5,6 +5,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { baseURL } from "../../../../utils/config";
 import "../../../../styles/product-card.css";
+import Breadcrumbs from "@/components/Common/Breadcrumbs";
 
 // Component for rendering a single product card
 const ProductCard = ({ title, mockupImage, tilesImage, pdfLink }) => {
@@ -210,7 +211,7 @@ const Catalogue2 = () => {
         </Row>
 
         <Row>
-          {/* 6. Product cards - Second Row - Inprogress*/}
+          {/* 6. Product cards - Second Row */}
           <ProductCard
             title="ELEVATION PLATINUM & VARNISH"
             mockupImage="/wall-porcelain/300X600MM/ELEVATIONPLATINUM&VARNISH-300X600MM-BLACKROCK-CHANFIGARH-302.jpg"

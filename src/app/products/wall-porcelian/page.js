@@ -2,22 +2,18 @@ import React from "react";
 import PorcelainThreeSix from "@/components/Product/Wall/Porcelain/300x600mm-porcelain-wall";
 import { Col, Container, Row } from "react-bootstrap";
 import { NEXT_PUBLIC_WEB_URL } from "@/utils/constant";
+import Breadcrumbs from "@/components/Common/Breadcrumbs";
 
 // Breadcrumb Component
 const Breadcrumb = () => (
-  <nav className="container" aria-label="breadcrumb">
-    <ol className="breadcrumb">
-      <li className="breadcrumb-item">
-        <a href="/" className="text-gray-700">Home</a>
-      </li>
-      <li className="breadcrumb-item">
-        <a href="/products" className="text-gray-700">Products</a>
-      </li>
-      <li className="breadcrumb-item active" aria-current="page">
-        Wall-Porcelaian
-      </li>
-    </ol>
-  </nav>
+
+  <Breadcrumbs
+    items={[
+      { label: "Home", href: "/", active: false },
+      { label: "Products", href: "/products", active: false },
+      { label: "Wall-Porcelaian", active: true },
+    ]}
+  />
 );
 
 // Page Component
