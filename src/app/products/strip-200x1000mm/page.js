@@ -10,6 +10,7 @@ const Breadcrumb = () => (
     <ol className="breadcrumb">
       <li className="breadcrumb-item"><a href="/" className="text-gray-700">Home</a></li>
       <li className="breadcrumb-item"><a href="/products" className="text-gray-700">Products</a></li>
+      <li className="breadcrumb-item"><a href="/products/wall" className="text-gray-700">Wall</a></li>
       <li className="breadcrumb-item active" aria-current="page">Strip 200 x 1000 mm</li>
     </ol>
   </nav>

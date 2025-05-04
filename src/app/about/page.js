@@ -6,10 +6,21 @@ import React from "react";
 import AboutSec5 from "@/components/About/AboutSec5";
 import { NEXT_PUBLIC_WEB_URL } from "@/utils/constant";
 import PageJSON_LD from "@/components/Schema/PageJSON_LD";
+import Breadcrumbs from "@/components/Common/Breadcrumbs";
+
+const Breadcrumb = () => (
+  <Breadcrumbs
+    items={[
+      { label: "Home", href: "/", active: false },
+      { label: "About-Us", active: true }
+    ]}
+  />
+);
 
 const Page = () => {
   return (
     <>
+    <Breadcrumb/>
     <PageJSON_LD name={"About"} pathName={"about"}/>
       <AboutSec1 />
       <AboutSec2 />

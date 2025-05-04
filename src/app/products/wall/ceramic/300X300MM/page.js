@@ -3,17 +3,18 @@ import Product1 from "@/components/Product/WallCollection";
 import Product2 from "@/components/Product/Product2";
 import PageJSON_LD from "@/components/Schema/PageJSON_LD";
 import { NEXT_PUBLIC_WEB_URL } from "@/utils/constant";
-import Data from "@/components/Product/Wall/Ceramic/300x750mm-ceramic-wall";
+import Breadcrumbs from "@/components/Common/Breadcrumbs";
+import Data from "@/components/Product/Wall/Ceramic/300x300mm-ceramic-wall";
 
 const Breadcrumb = () => (
-  <nav className="container" aria-label="breadcrumb">
-    <ol className="breadcrumb">
-      <li className="breadcrumb-item"><a href="/" className="text-gray-700">Home</a></li>
-      <li className="breadcrumb-item"><a href="/products" className="text-gray-700">Products</a></li>
-      <li className="breadcrumb-item"><a href="/products/wall-ceramic" className="text-gray-700">Wall-Ceramic</a></li>
-      <li className="breadcrumb-item active" aria-current="page">300 X 750 MM</li>
-    </ol>
-  </nav>
+  <Breadcrumbs
+    items={[
+      { label: "Home", href: "/", active: false },
+      { label: "Products", href: "/products", active: false },
+      { label: "Wall-Ceramic", href: "/products/wall-ceramic", active: false },
+      { label: "300 X 300 MM", active: true },
+    ]}
+  />
 );
 
 const page = () => {

@@ -3,10 +3,21 @@ import Catalogue2 from '@/components/Catalogue/Catalogue2'
 import PageJSON_LD from '@/components/Schema/PageJSON_LD'
 import { NEXT_PUBLIC_WEB_URL } from '@/utils/constant'
 import React from 'react'
+import Breadcrumbs from "@/components/Common/Breadcrumbs";
+
+const Breadcrumb = () => (
+  <Breadcrumbs
+    items={[
+      { label: "Home", href: "/", active: false },
+      { label: "Catalouge", active: true }
+    ]}
+  />
+);
 
 const page = () => {
   return (
     <>
+    <Breadcrumb />
      <PageJSON_LD name={"Catalogue"} pathName={"catalogue"}/>
     <Catalogue1/>
     <Catalogue2/>

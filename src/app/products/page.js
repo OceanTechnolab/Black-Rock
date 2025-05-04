@@ -11,24 +11,20 @@ import BOOK_Small from "../../../image/Product/BOOK MATCH 001_Small.png";
 import BOOK_Big1 from "../../../image/Product/BOOK MATCH 002_Big.png";
 import BOOK_Small1 from "../../../image/Product/BOOK MATCH 002_Small.png";
 import { baseURL } from "../../utils/config";
+import Breadcrumbs from "@/components/Common/Breadcrumbs";
+import AllProducts from "@/components/Product/AllProducts";
 
+// Breadcrumb Component
 const Breadcrumb = () => (
-  <nav className="container" aria-label="breadcrumb">
-    <ol className="breadcrumb">
-      <li className="breadcrumb-item text-black">
-        <a
-          href="/"
-          className="text-black-rock-Black no-underline hover:underline"
-        >
-          Home
-        </a>
-      </li>
-      <li className="breadcrumb-item active" aria-current="page">
-        Products
-      </li>
-    </ol>
-  </nav>
+
+  <Breadcrumbs
+    items={[
+      { label: "Home", href: "/", active: false },
+      { label: "Products", href: "/products", active: false },
+    ]}
+  />
 );
+
 const currentYear = new Date().getFullYear();
 
 const page = () => {
@@ -36,20 +32,11 @@ const page = () => {
     <>
       <Breadcrumb />
       <WallCollection />
+      <AllProducts />
       <hr />
-      <Wall />
+      {/* <Wall />
       <hr />
-      <Strip />
-      {/* <Container className="">
-            <Row>
-              <h2 className="hidden"> Collection of {currentYear} </h2>
-              <Col md={12} lg={12} xl={12}>
-                <p className="font-ivarRegular xl:text-[100px] md:text-90 text-60 xl:leading-[110px] md:leading-[95px] leading-[66px] uppercase">
-                  Collection of {currentYear}
-                </p>
-              </Col>
-            </Row>
-      </Container> */}
+      <Strip /> */}
     </>
   );
 };

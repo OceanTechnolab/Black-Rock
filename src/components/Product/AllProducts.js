@@ -3,15 +3,15 @@ import { EyeIcon } from "@/utils/icon";
 import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { baseURL } from "../../../utils/config";
+import { baseURL } from "../../utils/config";
 import { NEXT_PUBLIC_WEB_URL } from "@/utils/constant";
 import { motion } from "framer-motion";
-import "../../../styles/product-card.css";
+import "../../styles/product-card.css";
 
 const currentYear = new Date().getFullYear();
 
-// Reusable Walls Component
-const Wall = ({ href, mainImage, altMain, titleMain, closeupImage, altCloseup, titleCloseup, label }) => (
+// Reusable AllProducts Component
+const AllProduct = ({ href, mainImage, altMain, titleMain, closeupImage, altCloseup, titleCloseup, label }) => (
   <Col lg={6} className="mb-10 container px-3 md:px-0">
     <motion.div
       initial={{ x: href.includes("ceramic") ? "-100%" : "100%", opacity: 0 }}
@@ -53,10 +53,10 @@ const Wall = ({ href, mainImage, altMain, titleMain, closeupImage, altCloseup, t
 );
 
 // Function to render all products
-const Walls = ({ products }) => (
+const AllProducts = ({ products }) => (
   <Row className="mt-1 xl:px-[20rem] lg:px-10 md:py-5 py-2">
     {products.map((product, index) => (
-      <Wall
+      <AllProduct
         key={index}
         href={product.href}
         mainImage={product.mainImage}
@@ -111,7 +111,7 @@ const page = () => {
           </Col>
         </Row>
       </Container>
-      <Walls products={products} />
+      <AllProducts products={products} />
     </>
   );
 };
