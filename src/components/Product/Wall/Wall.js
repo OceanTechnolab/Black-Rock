@@ -1,16 +1,17 @@
 "use client";
-
-import React from "react";
+import { EyeIcon } from "@/utils/icon";
 import Image from "next/image";
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { baseURL } from "../../../utils/config";
 import { NEXT_PUBLIC_WEB_URL } from "@/utils/constant";
 import { motion } from "framer-motion";
 import "../../../styles/product-card.css";
 
 const currentYear = new Date().getFullYear();
 
-// Reusable Tile Component
-const Tile = ({ href, mainImage, altMain, titleMain, closeupImage, altCloseup, titleCloseup, label }) => (
+// Reusable Walls Component
+const Wall = ({ href, mainImage, altMain, titleMain, closeupImage, altCloseup, titleCloseup, label }) => (
   <Col lg={6} className="mb-10 container px-3 md:px-0">
     <motion.div
       initial={{ x: href.includes("ceramic") ? "-100%" : "100%", opacity: 0 }}
@@ -51,7 +52,49 @@ const Tile = ({ href, mainImage, altMain, titleMain, closeupImage, altCloseup, t
   </Col>
 );
 
+// Function to render all products
+const Walls = ({ products }) => (
+  <Row className="mt-1 xl:px-[20rem] lg:px-10 md:py-5 py-2">
+    {products.map((product, index) => (
+      <Wall
+        key={index}
+        href={product.href}
+        mainImage={product.mainImage}
+        altMain={product.altMain}
+        titleMain={product.titleMain}
+        closeupImage={product.closeupImage}
+        altCloseup={product.altCloseup}
+        titleCloseup={product.titleCloseup}
+        label={product.label}
+      />
+    ))}
+  </Row>
+);
+
 const page = () => {
+  const products = [
+    {
+      href: "/products/wall-ceramic/",
+      mainImage: "/wall-ceramic/200X300MM/ELEVATION1_200X300MM_2004.jpg",
+      altMain: "Ceramic Body Tiles - Elevation Design",
+      titleMain: "Ceramic Body Tiles - Elevation Design",
+      closeupImage: "/wall-ceramic/200X300MM/ELEVATION2_200X300MM_2004_TILES.jpg",
+      altCloseup: "Ceramic Body Tiles - Closeup",
+      titleCloseup: "Ceramic Body Tiles - Closeup",
+      label: "Ceramic Body Tiles",
+    },
+    {
+      href: "/products/wall-porcelian/",
+      mainImage: "/wall-porcelain/BLACKROCK-300X600MM- MASTER-Mockup.jpg",
+      altMain: "Porcelain Body Tiles - Mockup Design",
+      titleMain: "Porcelain Body Tiles - Mockup Design",
+      closeupImage: "/wall-porcelain/BLACKROCK-300X600MM- MASTER-Tiles.jpg",
+      altCloseup: "Porcelain Body Tiles - Closeup",
+      titleCloseup: "Porcelain Body Tiles - Closeup",
+      label: "Porcelain Body Tiles",
+    },
+  ];
+
   return (
     <>
       <Container>
@@ -68,30 +111,7 @@ const page = () => {
           </Col>
         </Row>
       </Container>
-      <Row className="mt-1 xl:px-[20rem] lg:px-10 md:py-5 py-2">
-        {/* Ceramic Body Tiles */}
-        <Tile
-          href="/products/wall-ceramic/"
-          mainImage="/wall-ceramic/200X300MM/ELEVATION1_200X300MM_2004.jpg"
-          altMain="Ceramic Body Tiles - Elevation Design"
-          titleMain="Ceramic Body Tiles - Elevation Design"
-          closeupImage="/wall-ceramic/200X300MM/ELEVATION2_200X300MM_2004_TILES.jpg"
-          altCloseup="Ceramic Body Tiles - Closeup"
-          titleCloseup="Ceramic Body Tiles - Closeup"
-          label="Ceramic Body Tiles"
-        />
-        {/* Porcelain Body Tiles */}
-        <Tile
-          href="/products/wall-porcelian/"
-          mainImage="/wall-porcelain/BLACKROCK-300X600MM- MASTER-Mockup.jpg"
-          altMain="Porcelain Body Tiles - Mockup Design"
-          titleMain="Porcelain Body Tiles - Mockup Design"
-          closeupImage="/wall-porcelain/BLACKROCK-300X600MM- MASTER-Tiles.jpg"
-          altCloseup="Porcelain Body Tiles - Closeup"
-          titleCloseup="Porcelain Body Tiles - Closeup"
-          label="Porcelain Body Tiles"
-        />
-      </Row>
+      <Walls products={products} />
     </>
   );
 };
@@ -100,9 +120,9 @@ export default page;
 
 // Metadata for SEO
 export const metadata = {
-  title: "Explore Glossy, Matte, and High-Glossy Tiles at Blackrock",
-  description: `Browse Blackrock Porcelano’s wide selection of tiles, including Glossy, Matt, and High Glossy finishes. Perfect for floors, walls, kitchens, and bathrooms, combining style and durability.`,
+  title: "Discover the Exclusive Wall Collection at Blackrock",
+  description: `Explore Blackrock Porcelano’s Wall Collection featuring a variety of designs and finishes, including Glossy, Matte, and High-Glossy tiles. Perfect for enhancing your walls with style and durability.`,
   alternates: {
-    canonical: `${NEXT_PUBLIC_WEB_URL}/product`,
+    canonical: `${NEXT_PUBLIC_WEB_URL}/wall-collection`,
   },
 };

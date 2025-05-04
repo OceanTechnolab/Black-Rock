@@ -4,165 +4,125 @@ import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { baseURL } from "../../utils/config";
+import { NEXT_PUBLIC_WEB_URL } from "@/utils/constant";
+import { motion } from "framer-motion";
 import "../../styles/product-card.css";
 
-// Component for rendering a single product card
-const ProductCard = ({ title, mockupImage, tilesImage, pdfLink }) => {
-  return (
-    <Col lg={6} className="mb-10 container">
-      {/* Image container with mockup and tiles images */}
-      <div className="h-[390px] relative rounded-xl mb-3 image-container">
-        <div className="image-container-inner">
+const currentYear = new Date().getFullYear();
+
+// Reusable AllProducts Component
+const AllProduct = ({ href, mainImage, altMain, titleMain, closeupImage, altCloseup, titleCloseup, label }) => (
+  <Col lg={6} className="mb-10 container px-3 md:px-0">
+    <motion.div
+      initial={{ x: href.includes("ceramic") ? "-100%" : "100%", opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.9 }}
+    >
+      <div className="h-[390px] image-container relative rounded-xl mb-3">
+        <a href={href}>
           <Image
-            src={mockupImage}
+            src={mainImage}
             fill
-            className="object-cover rounded-xl drop-shadow-lg image-1"
-            alt={`${title} Mockup`}
-            title={`${title} Mockup`}
+            className="object-cover rounded-xl drop-shadow-lg bob-animation"
+            alt={altMain}
+            title={titleMain}
           />
-          <Image
-            src={tilesImage}
-            fill
-            className="object-cover rounded-xl drop-shadow-lg image-2"
-            alt={`${title} Tiles`}
-            title={`${title} Tiles`}
-          />
-        </div>
+          <div className="overlay"></div>
+        </a>
       </div>
       <Row>
-        <Col xs={4}>
-          {/* Product title and view button */}
+        <Col xs={8} md={8} lg={6} xl={5}>
           <p className="md:text-[26px] md:leading-[31px] text-lg leading-[22px] font-ivarRegular uppercase">
-            {title}
+            {label}
           </p>
-          <a href={`${baseURL}${pdfLink}`} target="_blank" rel="noopener noreferrer">
-            <div
-              className="circle-animation w-[90px] h-[90px] rounded-full border-2 border-black-rock-Grey relative cursor-pointer"
-              role="button"
-            >
-              <div className="absolute inset-0 flex justify-center items-center">
-                <div>
-                  <span className="flex justify-center mb-2">
-                    <EyeIcon />
-                  </span>
-                  <p className="font-gt-regular text-12 mb-0 text-black">View</p>
-                </div>
-              </div>
-            </div>
-          </a>
         </Col>
-        <Col xs={8}>
-          {/* Tiles image */}
-          <div className="xl:h-[150px] md:h-[100px] h-[150px] relative">
+        <Col xs={4} md={4} lg={6} xl={7}>
+          <div className="xl:h-[150px] md:h-[100px] h-[50px] relative">
             <Image
-              src={tilesImage}
+              src={closeupImage}
               fill
               className="object-cover rounded-xl drop-shadow-lg bob-animation"
-              alt={`${title} Tiles`}
-              title={`${title} Tiles`}
+              alt={altCloseup}
+              title={titleCloseup}
             />
           </div>
         </Col>
       </Row>
-    </Col>
-  );
-};
+    </motion.div>
+  </Col>
+);
 
-const Catalogue2 = () => {
+// Function to render all products
+const AllProducts = ({ products }) => (
+  <Row className="mt-1 xl:px-[20rem] lg:px-10 md:py-5 py-2">
+    {products.map((product, index) => (
+      <AllProduct
+        key={index}
+        href={product.href}
+        mainImage={product.mainImage}
+        altMain={product.altMain}
+        titleMain={product.titleMain}
+        closeupImage={product.closeupImage}
+        altCloseup={product.altCloseup}
+        titleCloseup={product.titleCloseup}
+        label={product.label}
+      />
+    ))}
+  </Row>
+);
+
+const page = () => {
+  const products = [
+    {
+      href: "/products/wall-ceramic/",
+      mainImage: "/wall-ceramic/200X300MM/ELEVATION1_200X300MM_2004.jpg",
+      altMain: "Ceramic Body Tiles - Elevation Design",
+      titleMain: "Ceramic Body Tiles - Elevation Design",
+      closeupImage: "/wall-ceramic/200X300MM/ELEVATION2_200X300MM_2004_TILES.jpg",
+      altCloseup: "Ceramic Body Tiles - Closeup",
+      titleCloseup: "Ceramic Body Tiles - Closeup",
+      label: "Ceramic Body Tiles",
+    },
+    {
+      href: "/products/wall-porcelian/",
+      mainImage: "/wall-porcelain/BLACKROCK-300X600MM- MASTER-Mockup.jpg",
+      altMain: "Porcelain Body Tiles - Mockup Design",
+      titleMain: "Porcelain Body Tiles - Mockup Design",
+      closeupImage: "/wall-porcelain/BLACKROCK-300X600MM- MASTER-Tiles.jpg",
+      altCloseup: "Porcelain Body Tiles - Closeup",
+      titleCloseup: "Porcelain Body Tiles - Closeup",
+      label: "Porcelain Body Tiles",
+    },
+  ];
+
   return (
     <>
       <Container>
         <Row>
-          <Col xs={12}>
-            {/* Section title */}
-            <h2 className="mt-2 text-50 leading-[66px] font-ivarRegular uppercase md:mb-6">
-              300 X 600 MM
-            </h2>
+          <h2 className="hidden">Wall Collection of {currentYear}</h2>
+          <Col md={12}>
+            <motion.div
+              initial={{ opacity: 1, y: 20 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              className="font-ivarRegular uppercase xl:text-60 lg:text-[49px] md:text-60 text-[38px] xl:leading-[66px] lg:leading-[60px] md:leading-[66px] leading-[42px]"
+            >
+              <p>Wall Collection of {currentYear}</p>
+            </motion.div>
           </Col>
         </Row>
-
-        <Row>
-          {/* 1. Product cards - First Row */}
-          <ProductCard
-            title="ELEVATION"
-            mockupImage="/wall-porcelain/300X600MM/ELEVATION-1-30x60CM-BLACKROCK-E1-1006.jpg"
-            tilesImage="/wall-porcelain/300X600MM/ELEVATION-1-30x60CM-BLACKROCK-E1-1006TILES.jpg"
-            pdfLink="elevation-1-30x60cm-blackrock.pdf"
-          />
-          <ProductCard
-            title="ELEVATION"
-            mockupImage="/wall-porcelain/300X600MM/ELEVATION-2-30X60CM-BLACKROCK-E24-1467.jpg"
-            tilesImage="/wall-porcelain/300X600MM/ELEVATION-2-30X60CM-BLACKROCK-E24-1467TILES.jpg"
-            pdfLink="elevation-2-30x60cm-blackrock.pdf"
-          />
-        </Row>
-
-        <Row>
-          {/* 2. Product cards - Second Row */}
-          <ProductCard
-            title="ELEVATION"
-            mockupImage="/wall-porcelain/300X600MM/ELEVATION-2-30X60CM-BLACKROCK-E24-1470.jpg"
-            tilesImage="/wall-porcelain/300X600MM/ELEVATION-2-30X60CM-BLACKROCK-QE24-1470TILES.jpg"
-            pdfLink="elevation-2porcelain-300x600mm-blackrock.pdf"
-          />
-          <ProductCard
-            title="ELEVATION"
-            mockupImage="/wall-porcelain/300X600MM/ELEVATION-3-30X60CM-BLACKROCK-E34-1665.jpg"
-            tilesImage="/wall-porcelain/300X600MM/ELEVATION-3-30X60CM-BLACKROCK-E34-1665TILES.jpg"
-            pdfLink="elevation-3-30x60cm-blackrock.pdf"
-          />
-        </Row>
-
-        <Row>
-          {/* 3. Product cards - Second Row */}
-          <ProductCard
-            title="GLOSSY & MATT"
-            mockupImage="/wall-porcelain/300X600MM/BLACKROCK-300X600MM-GLOSSY&MATT1-AC-AC6445.jpg"
-            tilesImage="/wall-porcelain/300X600MM/BLACKROCK-300X600MM-GLOSSY&MATT1-AC-AC6445HL.jpg"
-            pdfLink="glossykitchen30x60cm-blackrock.pdf"
-          />
-          <ProductCard
-            title="ELEVATION"
-            mockupImage="/wall-porcelain/300X600MM/BLACKROCK-300X600MM-GLOSSY&MATT1-AC-AC6746.jpg"
-            tilesImage="/wall-porcelain/300X600MM/BLACKROCK-300X600MM-GLOSSY&MATT1-AC-AC6746HL.jpg"
-            pdfLink="blackrock-300x600mm-matt1-ac.pdf"
-          />
-        </Row>
-
-        <Row>
-          {/* 4. Product cards - Second Row*/}
-          <ProductCard
-            title="MATT"
-            mockupImage="/wall-porcelain/300X600MM/BLACKROCK-300X600MM-MASTER-AC-AC-6273.jpg"
-            tilesImage="/wall-porcelain/300X600MM/BLACKROCK-300X600MM-MASTER-AC-AC-6273HL.jpg"
-            pdfLink="blackrock-300x600mm-matt3-ac.pdf"
-          />
-          <ProductCard
-            title="ELEVATION"
-            mockupImage="/wall-porcelain/300X600MM/BLACKROCK-300X600MM-MASTER-Tiles.jpg"
-            tilesImage="/wall-porcelain/300X600MM/BLACKROCK-300X600MM-MASTER-AC-AC-7214HL.jpg"
-            pdfLink="elevation-1-30x60cm-blackrock.pdf"
-          />
-        </Row>
-
-        <Row>
-          {/* 5. Product cards - Second Row - Inprogress*/}
-          <ProductCard
-            title="MATT"
-            mockupImage="/wall-porcelain/300X600MM/BLACKROCK-300X600MM-MATT1-AC-AC-7345.jpg"
-            tilesImage="/wall-porcelain/300X600MM/BLACKROCK-300X600MM-MATT1-AC-AC-7345HL.jpg"
-            pdfLink="blackrock-300x600mm-matt1-ac.pdf"
-          />
-          <ProductCard
-            title="MATT"
-            mockupImage="/wall-porcelain/300X600MM/BLACKROCK-300X600MM-MATT1-AC-AC7341.jpg"
-            tilesImage="/wall-porcelain/300X600MM/BLACKROCK-300X600MM-MATT1-AC-AC7341HL.jpg"
-            pdfLink="blackrock-300x600mm-matt2-ac.pdf"
-          />
-        </Row>
       </Container>
+      <AllProducts products={products} />
     </>
   );
 };
 
-export default Catalogue2;
+export default page;
+
+// Metadata for SEO
+export const metadata = {
+  title: "Discover the Exclusive Wall Collection at Blackrock",
+  description: `Explore Blackrock Porcelano’s Wall Collection featuring a variety of designs and finishes, including Glossy, Matte, and High-Glossy tiles. Perfect for enhancing your walls with style and durability.`,
+  alternates: {
+    canonical: `${NEXT_PUBLIC_WEB_URL}/wall-collection`,
+  },
+};

@@ -31,22 +31,12 @@ const page = () => {
   return (
     <>
       <Breadcrumb />
-      <AllProducts />
       <WallCollection />
+      <AllProducts />
       <hr />
-      <Wall />
+      {/* <Wall />
       <hr />
-      <Strip />
-      {/* <Container className="">
-            <Row>
-              <h2 className="hidden"> Collection of {currentYear} </h2>
-              <Col md={12} lg={12} xl={12}>
-                <p className="font-ivarRegular xl:text-[100px] md:text-90 text-60 xl:leading-[110px] md:leading-[95px] leading-[66px] uppercase">
-                  Collection of {currentYear}
-                </p>
-              </Col>
-            </Row>
-      </Container> */}
+      <Strip /> */}
     </>
   );
 };
