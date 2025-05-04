@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import Image from "next/image";
 import { Col, Container, Row } from "react-bootstrap";
@@ -6,6 +7,7 @@ import { NEXT_PUBLIC_WEB_URL } from "@/utils/constant";
 import { motion } from "framer-motion";
 import "../../../styles/product-card.css";
 
+// Breadcrumb Component
 const Breadcrumb = () => (
   <nav className="container" aria-label="breadcrumb">
     <ol className="breadcrumb">
@@ -22,6 +24,48 @@ const Breadcrumb = () => (
 );
 
 const currentYear = new Date().getFullYear();
+
+// Reusable Tile Component
+const Tile = ({ href, mainImage, altMain, titleMain, closeupImage, altCloseup, titleCloseup, label }) => (
+  <Col lg={6} className="mb-10 container px-3 md:px-0">
+    <motion.div
+      initial={{ x: href.includes("ceramic") ? "-100%" : "100%", opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.9 }}
+    >
+      <div className="h-[390px] image-container relative rounded-xl mb-3">
+        <a href={href}>
+          <Image
+            src={mainImage}
+            fill
+            className="object-cover rounded-xl drop-shadow-lg bob-animation"
+            alt={altMain}
+            title={titleMain}
+          />
+          <div className="overlay"></div>
+        </a>
+      </div>
+      <Row>
+        <Col xs={8} md={8} lg={6} xl={5}>
+          <p className="md:text-[26px] md:leading-[31px] text-lg leading-[22px] font-ivarRegular uppercase">
+            {label}
+          </p>
+        </Col>
+        <Col xs={4} md={4} lg={6} xl={7}>
+          <div className="xl:h-[150px] md:h-[100px] h-[50px] relative">
+            <Image
+              src={closeupImage}
+              fill
+              className="object-cover rounded-xl drop-shadow-lg bob-animation"
+              alt={altCloseup}
+              title={titleCloseup}
+            />
+          </div>
+        </Col>
+      </Row>
+    </motion.div>
+  </Col>
+);
 
 const page = () => {
   return (
@@ -41,82 +85,28 @@ const page = () => {
         </Row>
       </Container>
       <Row className="mt-1 xl:px-[20rem] lg:px-10 md:py-5 py-2">
-        <Col lg={6} className="mb-10 container">
-          <motion.div
-            initial={{ x: "-100%", opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.9 }}
-          >
-            <div className="h-[390px] image-container relative rounded-xl mb-3">
-              <a href="/products/wall-ceramic/" className="">
-                <Image
-                  src="/wall-ceramic/200X300MM/ELEVATION1_200X300MM_2004.jpg"
-                  fill
-                  className="object-cover rounded-xl drop-shadow-lg bob-animation"
-                  alt="Ceramic Body Tiles - Elevation Design"
-                  title="Ceramic Body Tiles - Elevation Design"
-                />
-                <div className="overlay"></div>
-              </a>
-            </div>
-            <Row>
-              <Col xs={8} md={8} lg={6} xl={5}>
-                <p className="md:text-[26px] md:leading-[31px] text-lg leading-[22px] font-ivarRegular uppercase">
-                  Ceramic Body Tiles
-                </p>
-              </Col>
-              <Col xs={4} md={4} lg={6} xl={7}>
-                <div className="xl:h-[150px] md:h-[100px] h-[50px] relative">
-                  <Image
-                    src="/wall-ceramic/200X300MM/ELEVATION2_200X300MM_2004_TILES.jpg"
-                    fill
-                    className="object-cover rounded-xl drop-shadow-lg bob-animation"
-                    alt="Ceramic Body Tiles - Closeup"
-                    title="Ceramic Body Tiles - Closeup"
-                  />
-                </div>
-              </Col>
-            </Row>
-          </motion.div>
-        </Col>
-        <Col lg={6} className="mb-10 container">
-          <motion.div
-            initial={{ x: "100%", opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.9 }}
-          >
-            <div className="h-[390px] image-container relative rounded-xl mb-3">
-              <a href="/products/wall-porcelian/" className="">
-                <Image
-                  src="/wall-porcelain/BLACKROCK-300X600MM- MASTER-Mockup.jpg"
-                  fill
-                  className="object-cover rounded-xl drop-shadow-lg bob-animation"
-                  alt="Porcelain Body Tiles - Mockup Design"
-                  title="Porcelain Body Tiles - Mockup Design"
-                />
-              </a>
-            </div>
-            <Row>
-              <Col xs={8} md={8} lg={6} xl={5}>
-                <p className="md:text-[26px] md:leading-[31px] text-lg leading-[22px] font-ivarRegular uppercase">
-                  Porcelain Body Tiles
-                </p>
-              </Col>
-              <Col xs={4} md={4} lg={6} xl={7}>
-                <div className="xl:h-[150px] md:h-[100px] h-[50px] relative">
-                  <Image
-                    src="/wall-porcelain/BLACKROCK-300X600MM- MASTER-Tiles.jpg"
-                    fill
-                    className="object-cover rounded-xl drop-shadow-lg bob-animation"
-                    alt="Porcelain Body Tiles - Closeup"
-                    title="Porcelain Body Tiles - Closeup"
-                  />
-                  <div className="overlay"></div>
-                </div>
-              </Col>
-            </Row>
-          </motion.div>
-        </Col>
+        {/* Ceramic Body Tiles */}
+        <Tile
+          href="/products/wall-ceramic/"
+          mainImage="/wall-ceramic/200X300MM/ELEVATION1_200X300MM_2004.jpg"
+          altMain="Ceramic Body Tiles - Elevation Design"
+          titleMain="Ceramic Body Tiles - Elevation Design"
+          closeupImage="/wall-ceramic/200X300MM/ELEVATION2_200X300MM_2004_TILES.jpg"
+          altCloseup="Ceramic Body Tiles - Closeup"
+          titleCloseup="Ceramic Body Tiles - Closeup"
+          label="Ceramic Body Tiles"
+        />
+        {/* Porcelain Body Tiles */}
+        <Tile
+          href="/products/wall-porcelian/"
+          mainImage="/wall-porcelain/BLACKROCK-300X600MM- MASTER-Mockup.jpg"
+          altMain="Porcelain Body Tiles - Mockup Design"
+          titleMain="Porcelain Body Tiles - Mockup Design"
+          closeupImage="/wall-porcelain/BLACKROCK-300X600MM- MASTER-Tiles.jpg"
+          altCloseup="Porcelain Body Tiles - Closeup"
+          titleCloseup="Porcelain Body Tiles - Closeup"
+          label="Porcelain Body Tiles"
+        />
       </Row>
     </>
   );
@@ -124,6 +114,7 @@ const page = () => {
 
 export default page;
 
+// Metadata for SEO
 export const metadata = {
   title: "Explore Glossy, Matte, and High-Glossy Tiles at Blackrock",
   description: `Browse Blackrock Porcelano’s wide selection of tiles, including Glossy, Matt, and High Glossy finishes. Perfect for floors, walls, kitchens, and bathrooms, combining style and durability.`,
