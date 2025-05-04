@@ -1,5 +1,6 @@
 import React from "react";
 import Porcelian from "@/components/Product/Wall/Porcelain/Porcelian-wall";
+import PorcelainThreeSix from "@/components/Product/Wall/Porcelain/300x600mm-porcelain-wall";
 import PageJSON_LD from "@/components/Schema/PageJSON_LD";
 import { Col, Container, Row } from "react-bootstrap";
 import { NEXT_PUBLIC_WEB_URL } from "@/utils/constant";
@@ -9,7 +10,7 @@ const Breadcrumb = () => (
     <ol className="breadcrumb">
       <li className="breadcrumb-item"><a href="/" className="text-gray-700">Home</a></li>
       <li className="breadcrumb-item"><a href="/products" className="text-gray-700">Products</a></li>
-      <li className="breadcrumb-item active" aria-current="page">Wall-Pocelian</li>
+      <li className="breadcrumb-item active" aria-current="page">Wall-Porcelaian</li>
     </ol>
   </nav>
 );
@@ -34,9 +35,8 @@ const page = () => {
           </Col>
         </Row>
       </Container>
-      {/* <div className="container">Ceramic</div>
-      <div className="container"><a href="/products/ceramicandporcelien/200X300MM" className="text-gray-700">200 by 300 MM</a></div> */}
-      <Porcelian />
+      
+      <PorcelainThreeSix />
     </>
   );
 };
