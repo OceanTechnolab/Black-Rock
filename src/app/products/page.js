@@ -11,24 +11,19 @@ import BOOK_Small from "../../../image/Product/BOOK MATCH 001_Small.png";
 import BOOK_Big1 from "../../../image/Product/BOOK MATCH 002_Big.png";
 import BOOK_Small1 from "../../../image/Product/BOOK MATCH 002_Small.png";
 import { baseURL } from "../../utils/config";
+import Breadcrumbs from "@/components/Common/Breadcrumbs";
 
+// Breadcrumb Component
 const Breadcrumb = () => (
-  <nav className="container" aria-label="breadcrumb">
-    <ol className="breadcrumb">
-      <li className="breadcrumb-item text-black">
-        <a
-          href="/"
-          className="text-black-rock-Black no-underline hover:underline"
-        >
-          Home
-        </a>
-      </li>
-      <li className="breadcrumb-item active" aria-current="page">
-        Products
-      </li>
-    </ol>
-  </nav>
+
+  <Breadcrumbs
+    items={[
+      { label: "Home", href: "/", active: false },
+      { label: "Products", href: "/products", active: false },
+    ]}
+  />
 );
+
 const currentYear = new Date().getFullYear();
 
 const page = () => {

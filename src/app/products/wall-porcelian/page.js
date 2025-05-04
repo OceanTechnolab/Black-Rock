@@ -5,6 +5,7 @@ import { NEXT_PUBLIC_WEB_URL } from "@/utils/constant";
 import Breadcrumbs from "@/components/Common/Breadcrumbs";
 
 // Breadcrumb Component
+// this is the live page as of now.
 const Breadcrumb = () => (
 
   <Breadcrumbs

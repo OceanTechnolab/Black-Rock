@@ -5,7 +5,6 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { baseURL } from "../../../../utils/config";
 import "../../../../styles/product-card.css";
-import Breadcrumbs from "@/components/Common/Breadcrumbs";
 
 // Component for rendering a single product card
 const ProductCard = ({ title, mockupImage, tilesImage, pdfLink }) => {

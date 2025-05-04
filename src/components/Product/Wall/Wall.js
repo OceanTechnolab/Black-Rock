@@ -5,7 +5,6 @@ import Image from "next/image";
 import { Col, Container, Row } from "react-bootstrap";
 import { NEXT_PUBLIC_WEB_URL } from "@/utils/constant";
 import { motion } from "framer-motion";
-import Breadcrumbs from "@/components/Common/Breadcrumbs";
 import "../../../styles/product-card.css";
 
 const currentYear = new Date().getFullYear();
@@ -55,12 +54,6 @@ const Tile = ({ href, mainImage, altMain, titleMain, closeupImage, altCloseup, t
 const page = () => {
   return (
     <>
-      <Breadcrumbs
-        items={[
-          { label: "Home", href: "/", active: false },
-          { label: "Products", active: true },
-        ]}
-      />
       <Container>
         <Row>
           <h2 className="hidden">Wall Collection of {currentYear}</h2>
