@@ -13,7 +13,7 @@ const Catalogue2 = () => {
         <Row>
           <Col xs={12}>
             <h2 className="mt-2 text-50 leading-[66px] font-ivarRegular uppercase md:mb-6">
-              200 X 300 MM
+              300 X 600 MM
             </h2>
           </Col>
         </Row>
@@ -22,15 +22,17 @@ const Catalogue2 = () => {
           <Col lg={6} className="mb-10 container">
             <div className="h-[390px] relative rounded-xl mb-3 image-container">
               <div className="image-container-inner">
+                {/* Mockup Image */}
                 <Image
-                  src="/wall-ceramic/200X300MM/ELEVATION1_200X300MM_2004.jpg"
+                  src="/wall-porcelain/300X600MM/ELEVATION-1-30x60CM-BLACKROCK-E1-1006.jpg"
                   fill
                   className="object-cover rounded-xl drop-shadow-lg image-1"
                   alt="Body Elevation"
                   title="Body Elevation"
                 />
+                {/* Tiles flip Image */}
                 <Image
-                  src="/wall-ceramic/200X300MM/ELEVATION2_200X300MM_2004_TILES.jpg"
+                  src="/wall-porcelain/300X600MM/ELEVATION-1-30x60CM-BLACKROCK-E1-1006TILES.jpg"
                   fill
                   className="object-cover rounded-xl drop-shadow-lg image-2"
                   alt="Product Image"
@@ -44,7 +46,7 @@ const Catalogue2 = () => {
                   ELEVATION
                 </p>
                 <a
-                  href={`${baseURL}elevation-200x300mm-digital-blackrock.pdf`}
+                  href={`${baseURL}elevation-1-30x60cm-blackrock.pdf`}
                   className=""
                   target="_blank" //Enable this for opening in new tab
                 >
@@ -64,13 +66,12 @@ const Catalogue2 = () => {
                     </div>
                   </div>
                 </a>
-                {/* <p className="text-2xl font-ivarRegular uppercase">600 X 1200 MM</p>
-                             <p className="text-xl font-gt-reguler uppercase">Glossy</p> */}
               </Col>
               <Col xs={8} md={8} lg={8} xl={8}>
                 <div className="xl:h-[150px] md:h-[100px] h-[150px] relative">
+                {/* Tiles Image */}
                   <Image
-                    src="/wall-ceramic/200X300MM/ELEVATION2_200X300MM_2004_TILES.jpg"
+                    src="/wall-porcelain/300X600MM/ELEVATION-1-30x60CM-BLACKROCK-E1-1006TILES.jpg"
                     fill
                     className="object-cover rounded-xl drop-shadow-lg bob-animation"
                     alt="Product Image"
@@ -148,14 +149,14 @@ const Catalogue2 = () => {
             <div className="h-[390px] relative rounded-xl mb-3 image-container">
               <div className="image-container-inner">
                 <Image
-                  src="/wall-ceramic/200X300MM/ELEVATION1 200X300MM_2022.jpg"
+                  src="/wall-porcelain/300X600MM/ELEVATION1 200X300MM_2022.jpg"
                   fill
                   className="object-cover rounded-xl drop-shadow-lg image-1"
                   alt="Body Elevation"
                   title="Body Elevation"
                 />
                 <Image
-                  src="/wall-ceramic/200X300MM/ELEVATION2 200X300MM_2022_TILES.jpg"
+                  src="/wall-porcelain/300X600MM/ELEVATION2 200X300MM_2022_TILES.jpg"
                   fill
                   className="object-cover rounded-xl drop-shadow-lg image-2"
                   alt="Product Image"
@@ -195,7 +196,7 @@ const Catalogue2 = () => {
               <Col xs={8} md={8} lg={8} xl={8}>
                 <div className="xl:h-[150px] md:h-[100px] h-[150px] relative">
                   <Image
-                    src="/wall-ceramic/200X300MM/ELEVATION2 200X300MM_2022_TILES.jpg"
+                    src="/wall-porcelain/300X600MM/ELEVATION2 200X300MM_2022_TILES.jpg"
                     fill
                     className="object-cover rounded-xl drop-shadow-lg bob-animation"
                     alt="Product Image"
@@ -209,14 +210,14 @@ const Catalogue2 = () => {
             <div className="h-[390px] relative rounded-xl mb-3 image-container">
               <div className="image-container-inner">
                 <Image
-                  src="/wall-ceramic/200X300MM/ORDINARY 200X300MM BLACKROCK___223.jpg"
+                  src="/wall-porcelain/300X600MM/ORDINARY 200X300MM BLACKROCK___223.jpg"
                   fill
                   className="object-cover rounded-xl drop-shadow-lg image-1"
                   alt="Body Elevation"
                   title="Body Elevation"
                 />
                 <Image
-                  src="/wall-ceramic/200X300MM/ORDINARY 200X300MM BLACKROCK___223 TILES.jpg"
+                  src="/wall-porcelain/300X600MM/ORDINARY 200X300MM BLACKROCK___223 TILES.jpg"
                   fill
                   className="object-cover rounded-xl drop-shadow-lg image-2"
                   alt="Product Image"
@@ -256,7 +257,7 @@ const Catalogue2 = () => {
               <Col xs={8} md={8} lg={8} xl={8}>
                 <div className="xl:h-[150px] md:h-[100px] h-[150px] relative">
                   <Image
-                    src="/wall-ceramic/200X300MM/ORDINARY 200X300MM BLACKROCK___223 TILES.jpg"
+                    src="/wall-porcelain/300X600MM/ORDINARY 200X300MM BLACKROCK___223 TILES.jpg"
                     fill
                     className="object-cover rounded-xl drop-shadow-lg bob-animation"
                     alt="Product Image"
