@@ -1,12 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Product1 from "@/components/Product/WallCollection";
-import Product2 from "@/components/Product/Product2";
-import PageJSON_LD from "@/components/Schema/PageJSON_LD";
 import { Col, Container, Row } from "react-bootstrap";
 import { NEXT_PUBLIC_WEB_URL } from "@/utils/constant";
-import { baseURL } from "../../../utils/config";
 import { motion } from "framer-motion";
 import "../../../styles/product-card.css";
 
@@ -24,118 +20,100 @@ const Breadcrumb = () => (
     </ol>
   </nav>
 );
+
 const currentYear = new Date().getFullYear();
 
 const page = () => {
   return (
     <>
-      <Container className="">
-            <Row>
-              <h2 className="hidden"> Wall Collection of {currentYear} </h2>
-              <Col md={12} lg={12} xl={12}>
-                {/* <p className="font-ivarRegular xl:text-[100px] md:text-90 text-60 xl:leading-[110px] md:leading-[95px] leading-[66px] uppercase">
-                  Wall Collection of {currentYear}
-                </p> */}
-                <motion.div
-                  // ref={textRef}
-                  initial={{ opacity: 1, y: 20 }}
-                  // animate={isVisibleText ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 1, ease: "easeOut" }}
-                  className="font-ivarRegular uppercase xl:text-60 lg:text-[49px] md:text-60 text-[38px] xl:leading-[66px] lg:leading-[60px] md:leading-[66px] leading-[42px] "
-                ><p>Wall Collection of {currentYear}</p>
-                </motion.div>
-              </Col>
-            </Row>
+      <Container>
+        <Row>
+          <h2 className="hidden">Wall Collection of {currentYear}</h2>
+          <Col md={12}>
+            <motion.div
+              initial={{ opacity: 1, y: 20 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              className="font-ivarRegular uppercase xl:text-60 lg:text-[49px] md:text-60 text-[38px] xl:leading-[66px] lg:leading-[60px] md:leading-[66px] leading-[42px]"
+            >
+              <p>Wall Collection of {currentYear}</p>
+            </motion.div>
+          </Col>
+        </Row>
       </Container>
-      {/* <div className="container">
-        <a href="/products/ceramicandporcelien/" className="text-gray-700">
-          Wall
-        </a>
-      </div> */}
       <Row className="mt-1 xl:px-[20rem] lg:px-10 md:py-5 py-2">
-        <Col
-          lg={6}
-          className=" mb-10 container"
-        >
+        <Col lg={6} className="mb-10 container">
           <motion.div
-            initial={{ x: "-100%", opacity: 0 }} // Start off-screen to the left
-            animate={{ x: 0, opacity: 1 }} // Slide in and become visible
-            transition={{ duration: 0.9 }} // Smooth transition
+            initial={{ x: "-100%", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.9 }}
           >
-          <div className="h-[390px] image-container relative rounded-xl mb-3">
-          <a href="/products/wall-ceramic/" className="">
-            <Image
-              src="/wall-ceramic/200X300MM/ELEVATION1_200X300MM_2004.jpg"
-              fill
-              className="object-cover rounded-xl drop-shadow-lg bob-animation"
-              alt="Ceramic Tiles"
-              title="Ceramic Tiles"
-            />
-            <div className="overlay"></div>
-            </a>
-          </div>
-          <Row>
-            <Col xs={8} md={8} lg={6} xl={5}>
-              <p className="md:text-[26px] md:leading-[31px] text-lg leading-[22px] font-ivarRegular uppercase">
-              Ceramic Body Tiles
-              </p>
-              {/* <p className="text-2xl font-ivarRegular uppercase">600 X 1200 MM</p>
-              <p className="text-xl font-gt-reguler uppercase">Glossy</p> */}
-            </Col>
-            <Col xs={4} md={4} lg={6} xl={7}>
-              <div className="xl:h-[150px] md:h-[100px] h-[50px] relative">
+            <div className="h-[390px] image-container relative rounded-xl mb-3">
+              <a href="/products/wall-ceramic/" className="">
                 <Image
-                  src="/wall-ceramic/200X300MM/ELEVATION2_200X300MM_2004_TILES.jpg"
+                  src="/wall-ceramic/200X300MM/ELEVATION1_200X300MM_2004.jpg"
                   fill
                   className="object-cover rounded-xl drop-shadow-lg bob-animation"
-                  alt="Product Image"
-                  title="Product Image"
+                  alt="Ceramic Body Tiles - Elevation Design"
+                  title="Ceramic Body Tiles - Elevation Design"
                 />
-              </div>
-            </Col>
-          </Row>
-        </motion.div>
+                <div className="overlay"></div>
+              </a>
+            </div>
+            <Row>
+              <Col xs={8} md={8} lg={6} xl={5}>
+                <p className="md:text-[26px] md:leading-[31px] text-lg leading-[22px] font-ivarRegular uppercase">
+                  Ceramic Body Tiles
+                </p>
+              </Col>
+              <Col xs={4} md={4} lg={6} xl={7}>
+                <div className="xl:h-[150px] md:h-[100px] h-[50px] relative">
+                  <Image
+                    src="/wall-ceramic/200X300MM/ELEVATION2_200X300MM_2004_TILES.jpg"
+                    fill
+                    className="object-cover rounded-xl drop-shadow-lg bob-animation"
+                    alt="Ceramic Body Tiles - Closeup"
+                    title="Ceramic Body Tiles - Closeup"
+                  />
+                </div>
+              </Col>
+            </Row>
+          </motion.div>
         </Col>
-        <Col
-          lg={6}
-          className="mb-10 container"
-        >
+        <Col lg={6} className="mb-10 container">
           <motion.div
-            initial={{ x: "100%", opacity: 0 }} // Start off-screen to the left
-            animate={{ x: 0, opacity: 1 }} // Slide in and become visible
-            transition={{ duration: 0.9 }} // Smooth transition
+            initial={{ x: "100%", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.9 }}
           >
-          <div className="h-[390px] relative rounded-xl mb-3">
-            <a href="/products/wall-porcelian/" className="">
-              <Image
-                src={`${baseURL}cs2.webp`}
-                fill
-                className="object-cover rounded-xl drop-shadow-lg"
-                alt="Porcelain Body Tiles"
-                title="Porcelain Body Tiles"
-              />
-            </a>
-          </div>
-          <Row>
-            <Col xs={8} md={8} lg={6} xl={5}>
-              <p className="md:text-[26px] md:leading-[31px] text-lg leading-[22px] font-ivarRegular uppercase">
-              Porcelain Body Tiles
-              </p>
-              {/* <p className="text-2xl font-ivarRegular uppercase">600 X 1200 MM</p>
-              <p className="text-xl font-gt-reguler uppercase">Glossy</p> */}
-            </Col>
-            <Col xs={4} md={4} lg={6} xl={7}>
-              <div className="xl:h-[150px] md:h-[100px] h-[50px] relative">
+            <div className="h-[390px] relative rounded-xl mb-3">
+              <a href="/products/wall-porcelian/" className="">
                 <Image
-                  src={`${baseURL}cs3.webp`}
+                  src="/wall-porcelain/BLACKROCK-300X600MM- MASTER-Mockup.jpg"
                   fill
                   className="object-cover rounded-xl drop-shadow-lg"
-                  alt="Product Image"
-                  title="Product Image"
+                  alt="Porcelain Body Tiles - Mockup Design"
+                  title="Porcelain Body Tiles - Mockup Design"
                 />
-              </div>
-            </Col>
-          </Row>
+              </a>
+            </div>
+            <Row>
+              <Col xs={8} md={8} lg={6} xl={5}>
+                <p className="md:text-[26px] md:leading-[31px] text-lg leading-[22px] font-ivarRegular uppercase">
+                  Porcelain Body Tiles
+                </p>
+              </Col>
+              <Col xs={4} md={4} lg={6} xl={7}>
+                <div className="xl:h-[150px] md:h-[100px] h-[50px] relative">
+                  <Image
+                    src="/wall-porcelain/BLACKROCK-300X600MM- MASTER-Tiles.jpg"
+                    fill
+                    className="object-cover rounded-xl drop-shadow-lg"
+                    alt="Porcelain Body Tiles - Closeup"
+                    title="Porcelain Body Tiles - Closeup"
+                  />
+                </div>
+              </Col>
+            </Row>
           </motion.div>
         </Col>
       </Row>
