@@ -11,6 +11,7 @@ const Breadcrumb = () => (
         items={[
             { label: "Home", href: "/", active: false },
             { label: "Products", href: "/products", active: false },
+            { label: "Wall", href: "/Wall", active: true },
         ]}
     />
 );

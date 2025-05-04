@@ -67,7 +67,7 @@ const page = () => {
             <ul className="p-0 font-ivarRegular text-center pt-2 space-y-2">
               <li>
               <button
-                onClick={() => window.location.href = "/products/wall-ceramic/200X300MM"}
+                onClick={() => window.location.href = "/products/wall/ceramic/200X300MM"}
                 className="text-black-rock-Black text-lg no-underline hover:underline px-2 py-3 border-1 border-gray-300 rounded-md hover:bg-gray-300 hover:text-black transition w-full mb-1"
               >
                 200 X 300 MM
@@ -75,7 +75,7 @@ const page = () => {
               </li>
               <li>
               <button
-                onClick={() => window.location.href = "/products/wall-ceramic/200X600MM"}
+                onClick={() => window.location.href = "/products/wall/ceramic/200X600MM"}
                 className="text-black-rock-Black text-lg no-underline hover:underline px-2 py-3 border-1 border-gray-300 rounded-md hover:bg-gray-300 hover:text-black transition w-full"
               >
                 200 X 600 MM
@@ -93,7 +93,7 @@ const page = () => {
             <ul className="p-0 font-ivarRegular text-center space-y-2">
               <li>
               <button
-                onClick={() => window.location.href = "/products/wall-ceramic/250X375MM"}
+                onClick={() => window.location.href = "/products/wall/ceramic/250X375MM"}
                 className="text-black-rock-Black text-lg no-underline hover:underline px-2 py-3 border-1 border-gray-300 rounded-md hover:bg-gray-300 hover:text-black transition w-full mb-1"
               >
                 250 X 375 MM
@@ -101,7 +101,7 @@ const page = () => {
               </li>
               <li>
               <button
-                onClick={() => window.location.href = "/products/wall-ceramic/250X400MM"}
+                onClick={() => window.location.href = "/products/wall/ceramic/250X400MM"}
                 className="text-black-rock-Black text-lg no-underline hover:underline px-2 py-3 border-1 border-gray-300 rounded-md hover:bg-gray-300 hover:text-black transition w-full"
               >
                 250 X 400 MM
@@ -119,7 +119,7 @@ const page = () => {
             <ul className="p-0 font-ivarRegular text-center space-y-2 ">
               <li>
               <button
-                onClick={() => window.location.href = "/products/wall-ceramic/300X300MM"}
+                onClick={() => window.location.href = "/products/wall/ceramic/300X300MM"}
                 className="text-black-rock-Black text-lg no-underline hover:underline px-2 py-3 border-1 border-gray-300 rounded-md hover:bg-gray-300 hover:text-black transition w-full mb-1"
               >
                 300 X 300 MM
@@ -127,7 +127,7 @@ const page = () => {
               </li>
               <li>
               <button
-                onClick={() => window.location.href = "/products/wall-ceramic/300X450MM"}
+                onClick={() => window.location.href = "/products/wall/ceramic/300X450MM"}
                 className="text-black-rock-Black text-lg no-underline hover:underline px-2 py-3 border-1 border-gray-300 rounded-md hover:bg-gray-300 hover:text-black transition w-full mb-1"
               >
                 300 X 450 MM
@@ -135,7 +135,7 @@ const page = () => {
               </li>
               <li>
               <button
-                onClick={() => window.location.href = "/products/wall-ceramic/300X600MM"}
+                onClick={() => window.location.href = "/products/wall/ceramic/300X600MM"}
                 className="text-black-rock-Black text-lg no-underline hover:underline px-2 py-3 border-1 border-gray-300 rounded-md hover:bg-gray-300 hover:text-black transition w-full mb-1"
               >
                 300 X 600 MM
@@ -143,7 +143,7 @@ const page = () => {
               </li>
               <li>
               <button
-                onClick={() => window.location.href = "/products/wall-ceramic/300X750MM"}
+                onClick={() => window.location.href = "/products/wall/ceramic/300X750MM"}
                 className="text-black-rock-Black text-lg no-underline hover:underline px-2 py-3 border-1 border-gray-300 rounded-md hover:bg-gray-300 hover:text-black transition w-full "
               >
                 300 X 750 MM

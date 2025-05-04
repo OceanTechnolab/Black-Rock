@@ -37,7 +37,7 @@ const Menu = ({ setIsMenuOpen }) => {
       label: "All Products",
       link: "/products",
       subList: [
-        { id: 1, label: "Wall", link: "/products",  },
+        { id: 1, label: "Wall", link: "/products/wall",  },
         { id: 2, label: "Porcelain Tiles (GVT & PGVT)", link: "/products" },
         { id: 3, label: "Full Body (Colour Body)", link: "/products" },
         { id: 4, label: "Slab (Marble & Kitchen Top)", link: "/products" },

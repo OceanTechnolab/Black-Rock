@@ -11,7 +11,8 @@ const Breadcrumb = () => (
     items={[
       { label: "Home", href: "/", active: false },
       { label: "Products", href: "/products", active: false },
-      { label: "Wall-Ceramic", href: "/products/wall/ceramic", active: false },
+      { label: "Wall", href: "/products/wall", active: false },
+      { label: "Ceramic", href: "/products/wall/ceramic", active: false },
       { label: "200 X 300 MM", active: true },
     ]}
   />

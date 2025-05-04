@@ -74,7 +74,7 @@ const Walls = ({ products }) => (
 const page = () => {
   const products = [
     {
-      href: "/products/wall-ceramic/",
+      href: "/products/wall/ceramic/",
       mainImage: "/wall-ceramic/200X300MM/ELEVATION1_200X300MM_2004.jpg",
       altMain: "Ceramic Body Tiles - Elevation Design",
       titleMain: "Ceramic Body Tiles - Elevation Design",
@@ -84,7 +84,7 @@ const page = () => {
       label: "Ceramic Body Tiles",
     },
     {
-      href: "/products/wall-porcelian/",
+      href: "/products/wall/porcelian/",
       mainImage: "/wall-porcelain/BLACKROCK-300X600MM- MASTER-Mockup.jpg",
       altMain: "Porcelain Body Tiles - Mockup Design",
       titleMain: "Porcelain Body Tiles - Mockup Design",
