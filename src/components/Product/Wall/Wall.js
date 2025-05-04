@@ -81,7 +81,7 @@ const page = () => {
         </Col>
         <Col lg={6} className="mb-10 container">
           <motion.div
-            initial={{ x: "100%", opacity: 0 }}
+            initial={{ x: "-100%", opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.9 }}
           >
@@ -90,7 +90,7 @@ const page = () => {
                 <Image
                   src="/wall-porcelain/BLACKROCK-300X600MM- MASTER-Mockup.jpg"
                   fill
-                  className="object-cover rounded-xl drop-shadow-lg"
+                  className="object-cover rounded-xl drop-shadow-lg bob-animation"
                   alt="Porcelain Body Tiles - Mockup Design"
                   title="Porcelain Body Tiles - Mockup Design"
                 />
@@ -107,10 +107,11 @@ const page = () => {
                   <Image
                     src="/wall-porcelain/BLACKROCK-300X600MM- MASTER-Tiles.jpg"
                     fill
-                    className="object-cover rounded-xl drop-shadow-lg"
+                    className="object-cover rounded-xl drop-shadow-lg bob-animation"
                     alt="Porcelain Body Tiles - Closeup"
                     title="Porcelain Body Tiles - Closeup"
                   />
+                  <div className="overlay"></div>
                 </div>
               </Col>
             </Row>
