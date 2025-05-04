@@ -1,22 +1,10 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Product1 from "@/components/Product/WallCollection";
-import Product2 from "@/components/Product/Product2";
-import PageJSON_LD from "@/components/Schema/PageJSON_LD";
-import { DownloadIcon, EyeIcon } from "@/utils/icon"; 
+import { EyeIcon } from "@/utils/icon"; 
 import { Col, Container, Row } from "react-bootstrap";
 import { NEXT_PUBLIC_WEB_URL } from "@/utils/constant";
-import BOOK_Big from "../../../image/Product/BOOK MATCH 001_Big.png";
-import BOOK_Small from "../../../image/Product/BOOK MATCH 001_Small.png";
-import BOOK_Big1 from "../../../image/Product/BOOK MATCH 002_Big.png";
-import BOOK_Small1 from "../../../image/Product/BOOK MATCH 002_Small.png";
-import { baseURL } from "../../utils/config";
-import { motion } from "framer-motion";
-import Home2 from "../../../image/Home/home11.jpg";
-import Link from "next/link";
-
-
+import { baseURL } from "../../../../utils/config";
 
 const page = () => {
   return (

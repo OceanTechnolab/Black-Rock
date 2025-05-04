@@ -1,12 +1,10 @@
 "use client";
-import { DownloadIcon, EyeIcon } from "@/utils/icon";
+import { EyeIcon } from "@/utils/icon";
 import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import BOOK_Big1 from "../../../image/Product/BOOK MATCH 002_Big.png";
-import BOOK_Small1 from "../../../image/Product/BOOK MATCH 002_Small.png";
-import { baseURL } from "../../utils/config";
-import "./ceramic.css";
+import { baseURL } from "../../../../utils/config";
+import "../../../../styles/product-card.css";
 
 const Catalogue2 = () => {
   return (

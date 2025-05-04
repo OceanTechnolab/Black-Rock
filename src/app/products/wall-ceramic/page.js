@@ -1,6 +1,6 @@
 import React from "react";
 import Product1 from "@/components/Product/WallCollection";
-import Ceramic from "@/components/Product/Ceramic-wall";
+import Ceramic from "@/components/Product/Wall/Ceramic/Ceramic-wall";
 import PageJSON_LD from "@/components/Schema/PageJSON_LD";
 import { Col, Container, Row } from "react-bootstrap";
 import { NEXT_PUBLIC_WEB_URL } from "@/utils/constant";

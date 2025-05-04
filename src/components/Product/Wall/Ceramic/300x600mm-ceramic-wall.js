@@ -3,10 +3,7 @@ import { DownloadIcon, EyeIcon } from "@/utils/icon";
 import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import BOOK_Big1 from "../../../image/Product/BOOK MATCH 002_Big.png";
-import BOOK_Small1 from "../../../image/Product/BOOK MATCH 002_Small.png";
-import { baseURL } from "../../utils/config";
-
+import { baseURL } from "../../../../utils/config";
 
 // Main Component
 const Catalogue2 = () => {
@@ -16,12 +13,10 @@ const Catalogue2 = () => {
           <Row>
             <Col xs={12}>
               <h2 className="mt-2 text-50 leading-[66px] font-ivarRegular uppercase md:mb-6">
-                200 X 600 MM
+                300 X 600 MM
               </h2>
             </Col>
           </Row>
-
-
           <Row className="">
             <Col
               lg={6}

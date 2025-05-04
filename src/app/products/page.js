@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import WallCollection from "@/components/Product/WallCollection";
-import Wall from "@/components/Product/Wall";
+import Wall from "@/components/Product/Wall/Wall";
 import Strip from "@/components/Product/Strip";
 import PageJSON_LD from "@/components/Schema/PageJSON_LD";
 import { Col, Container, Row } from "react-bootstrap";
