@@ -1,7 +1,8 @@
 import React from "react";
 import Breadcrumbs from "@/components/Common/Breadcrumbs";
 import { NEXT_PUBLIC_WEB_URL } from "@/utils/constant";
-import Wall from "@/components/Product/Wall/Wall";
+import GvtPgvt from "@/components/Product/GVT-PGVT/GvtPgvt";
+import WallCollection from "@/components/Product/WallCollection";
 
 // Breadcrumb Component
 const Breadcrumb = () => (
@@ -22,8 +23,7 @@ const page = () => {
 
             <WallCollection />
                        
-            {/* All products section */}
-            <Wall />
+            <GvtPgvt />
             
             <hr />
         </>

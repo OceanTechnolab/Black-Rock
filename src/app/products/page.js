@@ -13,6 +13,7 @@ import { baseURL } from "../../utils/config";
 import Breadcrumbs from "@/components/Common/Breadcrumbs";
 import AllProducts from "@/components/Product/AllProducts";
 import WallCollection from "@/components/Product/WallCollection";
+import GvtPgvt from "@/components/Product/GVT-PGVT/GvtPgvt";
 
 // Breadcrumb Component
 const Breadcrumb = () => (
@@ -32,11 +33,12 @@ const page = () => {
     <>
       <Breadcrumb />
       <WallCollection />
-      <AllProducts />
       <hr />
-      {/* <Wall />
+       <Wall />
       <hr />
-      <Strip /> */}
+      <GvtPgvt />
+      <hr />
+      <Strip /> 
     </>
   );
 };
