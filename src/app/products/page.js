@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import WallCollection from "@/components/Product/WallCollection";
 import Wall from "@/components/Product/Wall/Wall";
 import Strip from "@/components/Product/Strip";
 import PageJSON_LD from "@/components/Schema/PageJSON_LD";
@@ -13,6 +12,7 @@ import BOOK_Small1 from "../../../image/Product/BOOK MATCH 002_Small.png";
 import { baseURL } from "../../utils/config";
 import Breadcrumbs from "@/components/Common/Breadcrumbs";
 import AllProducts from "@/components/Product/AllProducts";
+import WallCollection from "@/components/Product/WallCollection";
 
 // Breadcrumb Component
 const Breadcrumb = () => (

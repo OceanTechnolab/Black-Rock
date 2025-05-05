@@ -9,7 +9,7 @@ const Breadcrumb = () => (
         items={[
             { label: "Home", href: "/", active: false },
             { label: "Products", href: "/products", active: false },
-            { label: "Wall", href: "/Wall", active: true },
+            { label: "GVT & PGVT Collections", href: "/gvt-pgvt", active: true },
         ]}
     />
 );
@@ -19,7 +19,9 @@ const page = () => {
         <>
             {/* Breadcrumb navigation */}
             <Breadcrumb />
-            
+
+            <WallCollection />
+                       
             {/* All products section */}
             <Wall />
             
