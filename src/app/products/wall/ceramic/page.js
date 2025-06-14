@@ -13,7 +13,7 @@ const Breadcrumb = () => (
       { label: "Home", href: "/", active: false },
       { label: "Products", href: "/products", active: false },
       { label: "Wall", href: "/products/wall", active: false },
-      { label: "Porcelaian", active: true },
+      { label: "Ceramic", active: true },
     ]}
   />
 );

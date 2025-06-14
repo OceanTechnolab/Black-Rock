@@ -128,7 +128,7 @@ const DefiningLuxury = () => {
                   className="relative w-[270px] h-[270px] bg-black-rock-Orange rounded-full"
                 >
                   <div className="absolute inset-0 flex justify-center items-center text-black-rock-White">
-                    <span className="text-[80px]">12</span>
+                    <span className="text-[80px]">12+</span>
                     <span className="ms-2 mt-3 text-xl">
                       Years <br /> Experience
                     </span>

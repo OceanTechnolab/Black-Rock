@@ -10,8 +10,8 @@ import "../../../styles/product-card.css";
 
 const currentYear = new Date().getFullYear();
 
-// Reusable Walls Component
-const Wall = ({ href, mainImage, altMain, titleMain, closeupImage, altCloseup, titleCloseup, label }) => (
+// Reusable GvtPgvts Component
+const GvtPgvt = ({ href, mainImage, altMain, titleMain, closeupImage, altCloseup, titleCloseup, label }) => (
   <Col lg={6} className="mb-10 container px-3 md:px-0">
     <motion.div
       initial={{ x: href.includes("ceramic") ? "-100%" : "100%", opacity: 0 }}
@@ -53,10 +53,10 @@ const Wall = ({ href, mainImage, altMain, titleMain, closeupImage, altCloseup, t
 );
 
 // Function to render all products
-const Walls = ({ products }) => (
+const GvtPgvts = ({ products }) => (
   <Row className="mt-1 xl:px-[20rem] lg:px-10 md:py-5 py-2">
     {products.map((product, index) => (
-      <Wall
+      <GvtPgvt
         key={index}
         href={product.href}
         mainImage={product.mainImage}
@@ -74,21 +74,21 @@ const Walls = ({ products }) => (
 const page = () => {
   const products = [
     {
-      href: "/products/wall/ceramic/",
-      mainImage: "/wall-ceramic/200X300MM/ELEVATION1_200X300MM_2004.jpg",
+      href: "/products/GvtPgvt/ceramic/",
+      mainImage: "/GvtPgvt-ceramic/200X300MM/ELEVATION1_200X300MM_2004.jpg",
       altMain: "Ceramic Body Tiles - Elevation Design",
       titleMain: "Ceramic Body Tiles - Elevation Design",
-      closeupImage: "/wall-ceramic/200X300MM/ELEVATION2_200X300MM_2004_TILES.jpg",
+      closeupImage: "/GvtPgvt-ceramic/200X300MM/ELEVATION2_200X300MM_2004_TILES.jpg",
       altCloseup: "Ceramic Body Tiles - Closeup",
       titleCloseup: "Ceramic Body Tiles - Closeup",
       label: "Ceramic Body Tiles",
     },
     {
-      href: "/products/wall/porcelain/",
-      mainImage: "/wall-porcelain/BLACKROCK-300X600MM- MASTER-Mockup.jpg",
+      href: "/products/GvtPgvt/porcelain/",
+      mainImage: "/GvtPgvt-porcelain/BLACKROCK-300X600MM- MASTER-Mockup.jpg",
       altMain: "Porcelain Body Tiles - Mockup Design",
       titleMain: "Porcelain Body Tiles - Mockup Design",
-      closeupImage: "/wall-porcelain/BLACKROCK-300X600MM- MASTER-Tiles.jpg",
+      closeupImage: "/GvtPgvt-porcelain/BLACKROCK-300X600MM- MASTER-Tiles.jpg",
       altCloseup: "Porcelain Body Tiles - Closeup",
       titleCloseup: "Porcelain Body Tiles - Closeup",
       label: "Porcelain Body Tiles",
@@ -99,19 +99,19 @@ const page = () => {
     <>
       <Container>
         <Row>
-          <h2 className="hidden">Wall Collection of {currentYear}</h2>
+          <h2 className="hidden">GvtPgvt Collection of {currentYear}</h2>
           <Col md={12}>
             <motion.div
               initial={{ opacity: 1, y: 20 }}
               transition={{ duration: 1, ease: "easeOut" }}
               className="font-ivarRegular uppercase xl:text-60 lg:text-[49px] md:text-60 text-[38px] xl:leading-[66px] lg:leading-[60px] md:leading-[66px] leading-[42px]"
             >
-              <p>Wall Collection of {currentYear}</p>
+              <p>GvtPgvt Collection of {currentYear}</p>
             </motion.div>
           </Col>
         </Row>
       </Container>
-      <Walls products={products} />
+      <GvtPgvts products={products} />
     </>
   );
 };
@@ -120,9 +120,9 @@ export default page;
 
 // Metadata for SEO
 export const metadata = {
-  title: "Discover the Exclusive Wall Collection at Blackrock",
-  description: `Explore Blackrock Porcelano’s Wall Collection featuring a variety of designs and finishes, including Glossy, Matte, and High-Glossy tiles. Perfect for enhancing your walls with style and durability.`,
+  title: "Discover the Exclusive GvtPgvt Collection at Blackrock",
+  description: `Explore Blackrock Porcelano’s GvtPgvt Collection featuring a variety of designs and finishes, including Glossy, Matte, and High-Glossy tiles. Perfect for enhancing your GvtPgvts with style and durability.`,
   alternates: {
-    canonical: `${NEXT_PUBLIC_WEB_URL}/wall-collection`,
+    canonical: `${NEXT_PUBLIC_WEB_URL}/GvtPgvt-collection`,
   },
 };
