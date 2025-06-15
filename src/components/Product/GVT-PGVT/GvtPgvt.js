@@ -84,7 +84,7 @@ const page = () => {
       label: "Ceramic Body Tiles",
     },
     {
-      href: "/products/GvtPgvt/porcelain/",
+      href: "/products/GVT-PGVT/porcelain",
       mainImage: "/GvtPgvt-porcelain/BLACKROCK-300X600MM- MASTER-Mockup.jpg",
       altMain: "Porcelain Body Tiles - Mockup Design",
       titleMain: "Porcelain Body Tiles - Mockup Design",
